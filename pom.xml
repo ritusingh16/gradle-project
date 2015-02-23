@@ -91,18 +91,29 @@
 				<configuration>
 					<url>http://localhost:8088/manager/text</url>
 					<server>TomcatServer</server>
-					<path>/ritu</path>
+					<path>/rose</path>
 				</configuration>
 			</plugin>
 			
-<!-- 			<plugin> -->
-<!--                     <groupId>org.apache.maven.plugins</groupId> -->
-<!--                     <artifactId>maven-war-plugin</artifactId> -->
-<!--                     <configuration> -->
-<!--                         <webXml>/ems_db-master/src/main/webapp/WEB-INF/web.xml</webXml> -->
-<!--                     </configuration> -->
-<!--                 </plugin> -->
-			
+			<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-war-plugin</artifactId>
+<version>2.5</version>
+<configuration>
+<WebXml>src\main\webapp\WEB-INF\web.xml</WebXml>
+<webResources>
+<resource>
+<!--  this is relative to the pom.xml directory  -->
+<directory>src\main\webapp\jsp</directory>
+<!--  the list has a default value of **  -->
+<includes>
+<include>**/*.jsp</include>
+</includes>
+</resource>
+</webResources>
+</configuration>
+</plugin>
+
 		</plugins>
 
 
