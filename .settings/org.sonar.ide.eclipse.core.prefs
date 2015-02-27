@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
-extraProperties=
+extraProperties=sonar.jdbc.driver\=com.mysql.jdbc.Driver\r\nsonar.host.url\=http\://localhost\:9000\r\nsonar.jdbc.password\=root\r\nsonar.jdbc.url\=jdbc\:mysql\://localhost\:3306/sonar\r\nsonar.jdbc.username\=root
+lastAnalysisDate=1425029610407
 projectKey=com.sample.mvc\:ems_db-master
 serverUrl=http\://localhost\:9000
 version=2
