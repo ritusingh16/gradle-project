@@ -1,0 +1,461 @@
+SonarQube Runner 2.4
+Java 1.8.0_25 Oracle Corporation (64-bit)
+Windows 7 6.1 amd64
+INFO: Error stacktraces are turned on.
+INFO: Runner configuration file: d:\sonar-runner-dist-2.4\sonar-runner-2.4\conf\sonar-runner.properties
+INFO: Project configuration file: g:\mavenprac\simple-webapp\ems_db-master\sonar-project.properties
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Work directory: G:\mavenprac\simple-webapp\ems_db-master\.\.sonar
+INFO: SonarQube Server 5.1
+20:45:24.871 INFO  - Load global repositories
+20:45:24.886 DEBUG - Download: http://172.27.59.200:9000/batch/global (no proxy)
+20:45:25.121 INFO  - Load global repositories (done) | time=250ms
+20:45:25.121 INFO  - Server id: 20151228203714
+20:45:25.121 INFO  - User cache: C:\Users\ritus\.sonar\cache
+20:45:25.137 INFO  - Install plugins
+20:45:25.137 DEBUG - Download index of plugins
+20:45:25.137 DEBUG - Download: http://172.27.59.200:9000/deploy/plugins/index.txt (no proxy)
+20:45:25.293 DEBUG - Loaded 2575 properties from l10n bundles
+20:45:25.293 INFO  - Install JDBC driver
+20:45:25.293 DEBUG - Download index of jdbc-driver
+20:45:25.293 DEBUG - Download: http://172.27.59.200:9000/deploy/jdbc-driver.txt (no proxy)
+20:45:25.309 INFO  - Create JDBC datasource for jdbc:mysql://172.27.59.200:3306/sonar1?useUnicode=true&amp;characterEncoding=utf8
+20:45:25.716 DEBUG - Testing JDBC connection
+20:45:27.298 DEBUG - Download: http://172.27.59.200:9000/api/server (no proxy)
+20:45:27.360 INFO  - Initializing Hibernate
+20:45:27.360 DEBUG - hibernate.generate_statistics: false
+20:45:27.360 DEBUG - hibernate.dialect: org.sonar.core.persistence.dialect.MySql$MySqlWithDecimalDialect
+20:45:27.360 DEBUG - hibernate.connection.provider_class: org.sonar.jpa.session.CustomHibernateConnectionProvider
+20:45:29.427 INFO  - Load project repositories
+20:45:29.427 DEBUG - Download: http://172.27.59.200:9000/batch/project?key=check111&amp;preview=false (no proxy)
+20:45:30.203 INFO  - Load project repositories (done) | time=776ms
+20:45:30.203 INFO  - Load project settings
+20:45:30.764 INFO  - Load technical debt model
+20:45:30.842 DEBUG - Load technical debt model (done) | time=78ms
+20:45:30.842 INFO  - Apply project exclusions
+20:45:31.263 DEBUG - Acquire semaphore on project : org.sonar.api.resources.Project@44e49229[id=<null>,key=check111,qualifier=TRK], with key batch-check111
+20:45:31.404 INFO  - -------------  Scan knockout111
+20:45:31.404 INFO  - Load module settings
+20:45:31.591 DEBUG - Available languages:
+20:45:31.591 DEBUG -   * Java => "java"
+20:45:31.653 INFO  - Language is forced to java
+20:45:31.653 INFO  - Load rules
+20:45:31.981 DEBUG - Load rules (done) | time=328ms
+20:45:32.028 DEBUG - Code colorizer, supported languages: 
+20:45:32.028 DEBUG - Initializers : 
+20:45:32.028 INFO  - Base dir: G:\mavenprac\simple-webapp\ems_db-master
+20:45:32.028 INFO  - Working dir: G:\mavenprac\simple-webapp\ems_db-master\.sonar
+20:45:32.028 INFO  - Source paths: src
+20:45:32.028 INFO  - Source encoding: UTF-8, default locale: en_US
+20:45:32.028 INFO  - Index files
+20:45:32.043 INFO  - Excluded sources: 
+20:45:32.043 INFO  -   .
+20:45:32.043 DEBUG - Declared extensions of language org.sonar.batch.repository.language.Language@3a766cbf were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/controller/EmployeeController.java' is detected to be 'java'
+20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAO.java' is detected to be 'java'
+20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java' is detected to be 'java'
+20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/model/EmployeeCommand.java' is detected to be 'java'
+20:45:32.090 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeService.java' is detected to be 'java'
+20:45:32.090 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java' is detected to be 'java'
+20:45:32.121 INFO  - 6 files indexed
+20:45:32.121 INFO  - 0 files ignored because of inclusion/exclusion patterns
+20:45:32.527 INFO  - Quality profile for java: FindBugs
+20:45:32.558 DEBUG - Sensors : JavaSquidSensor -> Lines Sensor (wrapped) -> QProfileSensor -> InitialOpenIssuesSensor -> ProjectLinksSensor -> VersionEventsSensor -> org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9 -> SurefireSensor -> SCM Sensor (wrapped) -> CPD Sensor (wrapped)
+20:45:32.558 INFO  - Sensor JavaSquidSensor
+20:45:33.370 INFO  - Java Main Files AST scan...
+20:45:33.386 INFO  - 6 source files to be analyzed
+20:45:33.495 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.495 DEBUG - -----
+20:45:33.526 DEBUG - Completing symbol : Object
+20:45:33.542 DEBUG - Completing symbol : Map
+20:45:33.542 DEBUG - Completing symbol : Set
+20:45:33.542 DEBUG - Completing symbol : Collection
+20:45:33.542 DEBUG - Completing symbol : Iterable
+20:45:33.542 DEBUG - Completing symbol : Iterator
+20:45:33.542 DEBUG - Completing symbol : Consumer
+20:45:33.542 DEBUG - Completing symbol : FunctionalInterface
+20:45:33.542 DEBUG - Completing symbol : Documented
+20:45:33.542 DEBUG - Completing symbol : Retention
+20:45:33.542 DEBUG - Completing symbol : RetentionPolicy
+20:45:33.542 DEBUG - Completing symbol : Enum
+20:45:33.542 DEBUG - Completing symbol : Comparable
+20:45:33.542 DEBUG - Completing symbol : Class
+20:45:33.557 DEBUG - Completing symbol : Constructor
+20:45:33.557 DEBUG - Completing symbol : TypeVariable
+20:45:33.557 DEBUG - Completing symbol : ReflectionData
+20:45:33.557 DEBUG - Completing symbol : SoftReference
+20:45:33.557 DEBUG - Completing symbol : Reference
+20:45:33.557 DEBUG - Completing symbol : ReferenceQueue
+20:45:33.573 DEBUG - Completing symbol : Target
+20:45:33.573 DEBUG - Completing symbol : ElementType
+20:45:33.573 DEBUG - Completing symbol : Spliterator
+20:45:33.589 DEBUG - Completing symbol : Comparator
+20:45:33.589 DEBUG - Completing symbol : Function
+20:45:33.589 DEBUG - Completing symbol : ToIntFunction
+20:45:33.589 DEBUG - Completing symbol : ToLongFunction
+20:45:33.604 DEBUG - Completing symbol : ToDoubleFunction
+20:45:33.604 DEBUG - Completing symbol : Predicate
+20:45:33.604 DEBUG - Completing symbol : Stream
+20:45:33.604 DEBUG - Completing symbol : BaseStream
+20:45:33.604 DEBUG - Completing symbol : IntFunction
+20:45:33.604 DEBUG - Completing symbol : BinaryOperator
+20:45:33.604 DEBUG - Completing symbol : BiFunction
+20:45:33.604 DEBUG - Completing symbol : Optional
+20:45:33.604 DEBUG - Completing symbol : Supplier
+20:45:33.604 DEBUG - Completing symbol : BiConsumer
+20:45:33.620 DEBUG - Completing symbol : Collector
+20:45:33.620 DEBUG - Completing symbol : Builder
+20:45:33.620 DEBUG - Completing symbol : UnaryOperator
+20:45:33.620 DEBUG - Completing symbol : Entry
+20:45:33.620 DEBUG - Completing symbol : String
+20:45:33.620 DEBUG - Completing symbol : Serializable
+20:45:33.620 DEBUG - Completing symbol : CharSequence
+20:45:33.713 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.729 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.729 DEBUG - -----
+20:45:33.729 DEBUG - Completing symbol : Object
+20:45:33.729 DEBUG - Completing symbol : List
+20:45:33.745 DEBUG - Completing symbol : Collection
+20:45:33.745 DEBUG - Completing symbol : Iterable
+20:45:33.745 DEBUG - Completing symbol : Iterator
+20:45:33.745 DEBUG - Completing symbol : Consumer
+20:45:33.745 DEBUG - Completing symbol : FunctionalInterface
+20:45:33.745 DEBUG - Completing symbol : Documented
+20:45:33.745 DEBUG - Completing symbol : Retention
+20:45:33.745 DEBUG - Completing symbol : RetentionPolicy
+20:45:33.745 DEBUG - Completing symbol : Enum
+20:45:33.745 DEBUG - Completing symbol : Comparable
+20:45:33.745 DEBUG - Completing symbol : Class
+20:45:33.745 DEBUG - Completing symbol : Constructor
+20:45:33.745 DEBUG - Completing symbol : TypeVariable
+20:45:33.745 DEBUG - Completing symbol : ReflectionData
+20:45:33.745 DEBUG - Completing symbol : SoftReference
+20:45:33.745 DEBUG - Completing symbol : Reference
+20:45:33.745 DEBUG - Completing symbol : ReferenceQueue
+20:45:33.745 DEBUG - Completing symbol : Map
+20:45:33.745 DEBUG - Completing symbol : Set
+20:45:33.745 DEBUG - Completing symbol : Spliterator
+20:45:33.745 DEBUG - Completing symbol : Comparator
+20:45:33.745 DEBUG - Completing symbol : Function
+20:45:33.745 DEBUG - Completing symbol : ToIntFunction
+20:45:33.745 DEBUG - Completing symbol : ToLongFunction
+20:45:33.745 DEBUG - Completing symbol : ToDoubleFunction
+20:45:33.745 DEBUG - Completing symbol : Entry
+20:45:33.760 DEBUG - Completing symbol : BiConsumer
+20:45:33.760 DEBUG - Completing symbol : BiFunction
+20:45:33.760 DEBUG - Completing symbol : Target
+20:45:33.760 DEBUG - Completing symbol : ElementType
+20:45:33.760 DEBUG - Completing symbol : Predicate
+20:45:33.760 DEBUG - Completing symbol : Stream
+20:45:33.760 DEBUG - Completing symbol : BaseStream
+20:45:33.760 DEBUG - Completing symbol : IntFunction
+20:45:33.760 DEBUG - Completing symbol : BinaryOperator
+20:45:33.760 DEBUG - Completing symbol : Optional
+20:45:33.760 DEBUG - Completing symbol : Supplier
+20:45:33.760 DEBUG - Completing symbol : Collector
+20:45:33.760 DEBUG - Completing symbol : Builder
+20:45:33.760 DEBUG - Completing symbol : UnaryOperator
+20:45:33.760 DEBUG - Completing symbol : ListIterator
+20:45:33.776 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.807 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.807 DEBUG - -----
+20:45:33.823 DEBUG - Completing symbol : Object
+20:45:33.823 DEBUG - Completing symbol : List
+20:45:33.823 DEBUG - Completing symbol : Collection
+20:45:33.823 DEBUG - Completing symbol : Iterable
+20:45:33.823 DEBUG - Completing symbol : Iterator
+20:45:33.823 DEBUG - Completing symbol : Consumer
+20:45:33.823 DEBUG - Completing symbol : FunctionalInterface
+20:45:33.823 DEBUG - Completing symbol : Documented
+20:45:33.823 DEBUG - Completing symbol : Retention
+20:45:33.823 DEBUG - Completing symbol : RetentionPolicy
+20:45:33.823 DEBUG - Completing symbol : Enum
+20:45:33.823 DEBUG - Completing symbol : Comparable
+20:45:33.823 DEBUG - Completing symbol : Class
+20:45:33.823 DEBUG - Completing symbol : Constructor
+20:45:33.823 DEBUG - Completing symbol : TypeVariable
+20:45:33.823 DEBUG - Completing symbol : ReflectionData
+20:45:33.823 DEBUG - Completing symbol : SoftReference
+20:45:33.823 DEBUG - Completing symbol : Reference
+20:45:33.823 DEBUG - Completing symbol : ReferenceQueue
+20:45:33.823 DEBUG - Completing symbol : Map
+20:45:33.823 DEBUG - Completing symbol : Set
+20:45:33.838 DEBUG - Completing symbol : Spliterator
+20:45:33.838 DEBUG - Completing symbol : Comparator
+20:45:33.838 DEBUG - Completing symbol : Function
+20:45:33.838 DEBUG - Completing symbol : ToIntFunction
+20:45:33.838 DEBUG - Completing symbol : ToLongFunction
+20:45:33.838 DEBUG - Completing symbol : ToDoubleFunction
+20:45:33.838 DEBUG - Completing symbol : Entry
+20:45:33.838 DEBUG - Completing symbol : BiConsumer
+20:45:33.838 DEBUG - Completing symbol : BiFunction
+20:45:33.854 DEBUG - Completing symbol : Target
+20:45:33.854 DEBUG - Completing symbol : ElementType
+20:45:33.854 DEBUG - Completing symbol : Predicate
+20:45:33.854 DEBUG - Completing symbol : Stream
+20:45:33.854 DEBUG - Completing symbol : BaseStream
+20:45:33.854 DEBUG - Completing symbol : IntFunction
+20:45:33.854 DEBUG - Completing symbol : BinaryOperator
+20:45:33.854 DEBUG - Completing symbol : Optional
+20:45:33.854 DEBUG - Completing symbol : Supplier
+20:45:33.854 DEBUG - Completing symbol : Collector
+20:45:33.854 DEBUG - Completing symbol : Builder
+20:45:33.854 DEBUG - Completing symbol : UnaryOperator
+20:45:33.854 DEBUG - Completing symbol : ListIterator
+20:45:33.869 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.885 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.885 DEBUG - -----
+20:45:33.885 DEBUG - Completing symbol : Object
+20:45:33.885 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.901 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.901 DEBUG - -----
+20:45:33.901 DEBUG - Completing symbol : Object
+20:45:33.901 DEBUG - Completing symbol : List
+20:45:33.901 DEBUG - Completing symbol : Collection
+20:45:33.901 DEBUG - Completing symbol : Iterable
+20:45:33.901 DEBUG - Completing symbol : Iterator
+20:45:33.901 DEBUG - Completing symbol : Consumer
+20:45:33.901 DEBUG - Completing symbol : FunctionalInterface
+20:45:33.901 DEBUG - Completing symbol : Documented
+20:45:33.901 DEBUG - Completing symbol : Retention
+20:45:33.901 DEBUG - Completing symbol : RetentionPolicy
+20:45:33.901 DEBUG - Completing symbol : Enum
+20:45:33.901 DEBUG - Completing symbol : Comparable
+20:45:33.901 DEBUG - Completing symbol : Class
+20:45:33.901 DEBUG - Completing symbol : Constructor
+20:45:33.901 DEBUG - Completing symbol : TypeVariable
+20:45:33.901 DEBUG - Completing symbol : ReflectionData
+20:45:33.901 DEBUG - Completing symbol : SoftReference
+20:45:33.901 DEBUG - Completing symbol : Reference
+20:45:33.901 DEBUG - Completing symbol : ReferenceQueue
+20:45:33.901 DEBUG - Completing symbol : Map
+20:45:33.901 DEBUG - Completing symbol : Set
+20:45:33.901 DEBUG - Completing symbol : Spliterator
+20:45:33.901 DEBUG - Completing symbol : Comparator
+20:45:33.901 DEBUG - Completing symbol : Function
+20:45:33.901 DEBUG - Completing symbol : ToIntFunction
+20:45:33.901 DEBUG - Completing symbol : ToLongFunction
+20:45:33.901 DEBUG - Completing symbol : ToDoubleFunction
+20:45:33.901 DEBUG - Completing symbol : Entry
+20:45:33.901 DEBUG - Completing symbol : BiConsumer
+20:45:33.901 DEBUG - Completing symbol : BiFunction
+20:45:33.901 DEBUG - Completing symbol : Target
+20:45:33.901 DEBUG - Completing symbol : ElementType
+20:45:33.901 DEBUG - Completing symbol : Predicate
+20:45:33.901 DEBUG - Completing symbol : Stream
+20:45:33.901 DEBUG - Completing symbol : BaseStream
+20:45:33.901 DEBUG - Completing symbol : IntFunction
+20:45:33.901 DEBUG - Completing symbol : BinaryOperator
+20:45:33.901 DEBUG - Completing symbol : Optional
+20:45:33.901 DEBUG - Completing symbol : Supplier
+20:45:33.901 DEBUG - Completing symbol : Collector
+20:45:33.901 DEBUG - Completing symbol : Builder
+20:45:33.901 DEBUG - Completing symbol : UnaryOperator
+20:45:33.901 DEBUG - Completing symbol : ListIterator
+20:45:33.916 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.916 DEBUG - ----- Classpath analyzed by Squid:
+20:45:33.916 DEBUG - -----
+20:45:33.916 DEBUG - Completing symbol : Object
+20:45:33.916 DEBUG - Completing symbol : List
+20:45:33.916 DEBUG - Completing symbol : Collection
+20:45:33.916 DEBUG - Completing symbol : Iterable
+20:45:33.916 DEBUG - Completing symbol : Iterator
+20:45:33.916 DEBUG - Completing symbol : Consumer
+20:45:33.916 DEBUG - Completing symbol : FunctionalInterface
+20:45:33.916 DEBUG - Completing symbol : Documented
+20:45:33.916 DEBUG - Completing symbol : Retention
+20:45:33.916 DEBUG - Completing symbol : RetentionPolicy
+20:45:33.916 DEBUG - Completing symbol : Enum
+20:45:33.916 DEBUG - Completing symbol : Comparable
+20:45:33.916 DEBUG - Completing symbol : Class
+20:45:33.916 DEBUG - Completing symbol : Constructor
+20:45:33.916 DEBUG - Completing symbol : TypeVariable
+20:45:33.916 DEBUG - Completing symbol : ReflectionData
+20:45:33.916 DEBUG - Completing symbol : SoftReference
+20:45:33.916 DEBUG - Completing symbol : Reference
+20:45:33.932 DEBUG - Completing symbol : ReferenceQueue
+20:45:33.932 DEBUG - Completing symbol : Map
+20:45:33.932 DEBUG - Completing symbol : Set
+20:45:33.932 DEBUG - Completing symbol : Spliterator
+20:45:33.932 DEBUG - Completing symbol : Comparator
+20:45:33.932 DEBUG - Completing symbol : Function
+20:45:33.932 DEBUG - Completing symbol : ToIntFunction
+20:45:33.932 DEBUG - Completing symbol : ToLongFunction
+20:45:33.932 DEBUG - Completing symbol : ToDoubleFunction
+20:45:33.932 DEBUG - Completing symbol : Entry
+20:45:33.932 DEBUG - Completing symbol : BiConsumer
+20:45:33.932 DEBUG - Completing symbol : BiFunction
+20:45:33.932 DEBUG - Completing symbol : Target
+20:45:33.932 DEBUG - Completing symbol : ElementType
+20:45:33.932 DEBUG - Completing symbol : Predicate
+20:45:33.932 DEBUG - Completing symbol : Stream
+20:45:33.932 DEBUG - Completing symbol : BaseStream
+20:45:33.932 DEBUG - Completing symbol : IntFunction
+20:45:33.932 DEBUG - Completing symbol : BinaryOperator
+20:45:33.932 DEBUG - Completing symbol : Optional
+20:45:33.932 DEBUG - Completing symbol : Supplier
+20:45:33.932 DEBUG - Completing symbol : Collector
+20:45:33.932 DEBUG - Completing symbol : Builder
+20:45:33.932 DEBUG - Completing symbol : UnaryOperator
+20:45:33.932 DEBUG - Completing symbol : ListIterator
+20:45:33.932 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+20:45:33.932 INFO  - Java Main Files AST scan done: 562 ms
+20:45:33.932 WARN  - Java bytecode has not been made available to the analyzer. The org.sonar.java.bytecode.visitor.DependenciesVisitor@61a7ed9c are disabled.
+20:45:33.932 INFO  - Java Test Files AST scan...
+20:45:33.932 INFO  - 0 source files to be analyzed
+20:45:33.947 INFO  - Java Test Files AST scan done: 15 ms
+20:45:33.947 INFO  - 6/6 source files analyzed
+20:45:33.947 INFO  - 0/0 source files analyzed
+20:45:33.947 INFO  - Sensor JavaSquidSensor (done) | time=1389ms
+20:45:33.947 INFO  - Sensor Lines Sensor (wrapped)
+20:45:33.963 INFO  - Sensor Lines Sensor (wrapped) (done) | time=16ms
+20:45:33.963 INFO  - Sensor QProfileSensor
+20:45:33.963 INFO  - Sensor QProfileSensor (done) | time=0ms
+20:45:33.963 INFO  - Sensor InitialOpenIssuesSensor
+20:45:33.979 INFO  - Sensor InitialOpenIssuesSensor (done) | time=16ms
+20:45:33.979 INFO  - Sensor ProjectLinksSensor
+20:45:33.994 INFO  - Sensor ProjectLinksSensor (done) | time=15ms
+20:45:33.994 INFO  - Sensor VersionEventsSensor
+20:45:34.135 INFO  - Sensor VersionEventsSensor (done) | time=141ms
+20:45:34.135 INFO  - Sensor org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9
+20:45:34.135 WARN  - Findbugs needs sources to be compiled. Please build project before executing sonar or check the location of compiled classes to make it possible for Findbugs to analyse your project.
+20:45:34.135 INFO  - Sensor org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9 (done) | time=0ms
+20:45:34.135 INFO  - Sensor SurefireSensor
+20:45:34.135 INFO  - parsing G:\mavenprac\simple-webapp\ems_db-master\.sonar\build\surefire-reports
+20:45:34.135 WARN  - Reports path not found: G:\mavenprac\simple-webapp\ems_db-master\.sonar\build\surefire-reports
+20:45:34.135 INFO  - Sensor SurefireSensor (done) | time=0ms
+20:45:34.135 INFO  - Sensor SCM Sensor (wrapped)
+20:45:34.150 INFO  - Sensor SCM Sensor (wrapped) (done) | time=15ms
+20:45:34.150 INFO  - Sensor CPD Sensor (wrapped)
+20:45:34.150 INFO  - JavaCpdEngine is used for java
+20:45:34.150 INFO  - Cross-project analysis disabled
+20:45:34.166 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+20:45:34.213 INFO  - Sensor CPD Sensor (wrapped) (done) | time=63ms
+20:45:34.213 INFO  - No quality gate is configured.
+20:45:34.259 INFO  - Compare to previous analysis (2015-12-28)
+20:45:34.259 INFO  - Compare over 30 days (2015-11-28, analysis of Mon Dec 28 20:44:31 IST 2015)
+20:45:34.447 INFO  - Execute decorators...
+20:45:34.447 DEBUG - Decorators: ManualMeasureDecorator -> org.sonar.batch.issue.tracking.IssueTrackingDecorator@13b9da00 -> QProfileEventsDecorator -> org.sonar.batch.design.ProjectDsmDecorator@79b49b1d -> org.sonar.batch.design.SubProjectDsmDecorator@4d425872 -> org.sonar.batch.design.DirectoryDsmDecorator@1076f200 -> FileTangleIndexDecorator -> SumDuplicationsDecorator -> UnitTestDecorator -> org.sonar.plugins.core.security.ApplyProjectRolesDecorator@182b9c6f -> org.sonar.plugins.core.sensors.DirectoriesDecorator@748ef9e -> org.sonar.plugins.core.sensors.FilesDecorator@1b1cc90 -> org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@356eb8d4 -> org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@3dbf2603 -> org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@7f593176 -> org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@3fad151c -> org.sonar.plugins.core.timemachine.NewCoverageAggregator@30779b35 -> f(lines) -> f(generated_lines) -> f(ncloc) -> f(generated_ncloc) -> f(classes) -> f(packages) -> f(functions) -> f(accessors) -> f(statements) -> f(public_api) -> f(comment_lines) -> f(public_undocumented_api) -> f(commented_out_code_lines) -> f(complexity) -> f(complexity_in_classes) -> f(complexity_in_functions) -> f(class_complexity_distribution) -> f(function_complexity_distribution) -> f(file_complexity_distribution) -> f(lines_to_cover) -> f(uncovered_lines) -> f(conditions_to_cover) -> f(uncovered_conditions) -> f(it_lines_to_cover) -> f(it_uncovered_lines) -> f(it_conditions_to_cover) -> f(it_uncovered_conditions) -> f(overall_lines_to_cover) -> f(overall_uncovered_lines) -> f(overall_conditions_to_cover) -> f(overall_uncovered_conditions) -> f(rfc) -> f(rfc_distribution) -> f(lcom4_distribution) -> f(package_cycles) -> f(package_tangles) -> f(package_feedback_edges) -> f(package_edges_weight) -> f(new_lines_to_cover) -> f(new_uncovered_lines) -> f(new_conditions_to_cover) -> f(new_uncovered_conditions) -> f(new_it_lines_to_cover) -> f(new_it_uncovered_lines) -> f(new_it_conditions_to_cover) -> f(new_it_uncovered_conditions) -> f(new_overall_lines_to_cover) -> f(new_overall_uncovered_lines) -> f(new_overall_conditions_to_cover) -> f(new_overall_uncovered_conditions) -> org.sonar.batch.language.LanguageDistributionDecorator@67d30d56 -> org.sonar.batch.debt.DebtDecorator@23532a0e -> org.sonar.batch.debt.NewDebtDecorator@3680dff2 -> DirectoryTangleIndexDecorator -> org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@7e04a93f -> CountUnresolvedIssuesDecorator -> CountFalsePositivesDecorator -> CommentDensityDecorator -> f(file_complexity) -> f(class_complexity) -> f(function_complexity) -> org.sonar.plugins.core.sensors.LineCoverageDecorator@558ff531 -> org.sonar.plugins.core.sensors.CoverageDecorator@3fd96ec8 -> org.sonar.plugins.core.sensors.BranchCoverageDecorator@4a4cc870 -> org.sonar.plugins.core.sensors.ItLineCoverageDecorator@b50042d -> org.sonar.plugins.core.sensors.ItCoverageDecorator@21dc5e0b -> org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@5587cbd6 -> org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@79a4865e -> org.sonar.plugins.core.sensors.OverallCoverageDecorator@725e942b -> org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@3131a06d -> org.sonar.batch.debt.SqaleRatingDecorator@25cf767e -> org.sonar.plugins.core.timemachine.TendencyDecorator@60b4dacc -> VariationDecorator
+20:45:35.086 DEBUG - Decorator time:
+	ManualMeasureDecorator: 157ms
+	org.sonar.batch.issue.tracking.IssueTrackingDecorator@13b9da00: 0ms
+	QProfileEventsDecorator: 16ms
+	org.sonar.batch.design.ProjectDsmDecorator@79b49b1d: 0ms
+	org.sonar.batch.design.SubProjectDsmDecorator@4d425872: 0ms
+	org.sonar.batch.design.DirectoryDsmDecorator@1076f200: 0ms
+	FileTangleIndexDecorator: 0ms
+	SumDuplicationsDecorator: 0ms
+	UnitTestDecorator: 0ms
+	org.sonar.plugins.core.security.ApplyProjectRolesDecorator@182b9c6f: 93ms
+	org.sonar.plugins.core.sensors.DirectoriesDecorator@748ef9e: 0ms
+	org.sonar.plugins.core.sensors.FilesDecorator@1b1cc90: 0ms
+	org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@356eb8d4: 156ms
+	org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@3dbf2603: 0ms
+	org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@7f593176: 0ms
+	org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@3fad151c: 0ms
+	org.sonar.plugins.core.timemachine.NewCoverageAggregator@30779b35: 0ms
+	f(lines): 0ms
+	f(generated_lines): 0ms
+	f(ncloc): 0ms
+	f(generated_ncloc): 0ms
+	f(classes): 0ms
+	f(packages): 0ms
+	f(functions): 0ms
+	f(accessors): 0ms
+	f(statements): 0ms
+	f(public_api): 0ms
+	f(comment_lines): 0ms
+	f(public_undocumented_api): 0ms
+	f(commented_out_code_lines): 0ms
+	f(complexity): 0ms
+	f(complexity_in_classes): 0ms
+	f(complexity_in_functions): 0ms
+	f(class_complexity_distribution): 0ms
+	f(function_complexity_distribution): 31ms
+	f(file_complexity_distribution): 0ms
+	f(lines_to_cover): 0ms
+	f(uncovered_lines): 0ms
+	f(conditions_to_cover): 0ms
+	f(uncovered_conditions): 0ms
+	f(it_lines_to_cover): 0ms
+	f(it_uncovered_lines): 0ms
+	f(it_conditions_to_cover): 0ms
+	f(it_uncovered_conditions): 0ms
+	f(overall_lines_to_cover): 0ms
+	f(overall_uncovered_lines): 0ms
+	f(overall_conditions_to_cover): 0ms
+	f(overall_uncovered_conditions): 0ms
+	f(rfc): 16ms
+	f(rfc_distribution): 0ms
+	f(lcom4_distribution): 0ms
+	f(package_cycles): 0ms
+	f(package_tangles): 0ms
+	f(package_feedback_edges): 0ms
+	f(package_edges_weight): 0ms
+	f(new_lines_to_cover): 0ms
+	f(new_uncovered_lines): 0ms
+	f(new_conditions_to_cover): 0ms
+	f(new_uncovered_conditions): 0ms
+	f(new_it_lines_to_cover): 0ms
+	f(new_it_uncovered_lines): 0ms
+	f(new_it_conditions_to_cover): 0ms
+	f(new_it_uncovered_conditions): 0ms
+	f(new_overall_lines_to_cover): 0ms
+	f(new_overall_uncovered_lines): 0ms
+	f(new_overall_conditions_to_cover): 0ms
+	f(new_overall_uncovered_conditions): 0ms
+	org.sonar.batch.language.LanguageDistributionDecorator@67d30d56: 0ms
+	org.sonar.batch.debt.DebtDecorator@23532a0e: 0ms
+	org.sonar.batch.debt.NewDebtDecorator@3680dff2: 0ms
+	DirectoryTangleIndexDecorator: 0ms
+	org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@7e04a93f: 15ms
+	CountUnresolvedIssuesDecorator: 16ms
+	CountFalsePositivesDecorator: 0ms
+	CommentDensityDecorator: 0ms
+	f(file_complexity): 0ms
+	f(class_complexity): 0ms
+	f(function_complexity): 0ms
+	org.sonar.plugins.core.sensors.LineCoverageDecorator@558ff531: 0ms
+	org.sonar.plugins.core.sensors.CoverageDecorator@3fd96ec8: 0ms
+	org.sonar.plugins.core.sensors.BranchCoverageDecorator@4a4cc870: 0ms
+	org.sonar.plugins.core.sensors.ItLineCoverageDecorator@b50042d: 0ms
+	org.sonar.plugins.core.sensors.ItCoverageDecorator@21dc5e0b: 0ms
+	org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@5587cbd6: 0ms
+	org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@79a4865e: 0ms
+	org.sonar.plugins.core.sensors.OverallCoverageDecorator@725e942b: 0ms
+	org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@3131a06d: 0ms
+	org.sonar.batch.debt.SqaleRatingDecorator@25cf767e: 0ms
+	org.sonar.plugins.core.timemachine.TendencyDecorator@60b4dacc: 48ms
+	VariationDecorator: 45ms
+
+20:45:35.086 INFO  - Store results in database
+20:45:35.102 DEBUG - Execute org.sonar.batch.phases.GraphPersister
+20:45:35.102 DEBUG - Execute org.sonar.batch.index.SourcePersister
+20:45:35.273 DEBUG - Execute org.sonar.batch.index.ResourcePersister
+20:45:35.273 DEBUG - Execute org.sonar.batch.index.MeasurePersister
+20:45:36.272 DEBUG - Execute org.sonar.batch.index.DuplicationPersister
+20:45:36.303 INFO  - Analysis reports generated in 31ms, dir size=1 KB
+20:45:36.334 INFO  - Analysis reports compressed in 31ms, zip size=3 KB
+20:45:36.334 DEBUG - Publish results
+20:45:36.443 INFO  - Analysis reports sent to server in 109ms
+20:45:36.443 INFO  - ANALYSIS SUCCESSFUL, you can browse http://172.27.59.200:9000/dashboard/index/check111
+20:45:36.443 INFO  - Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report.
+20:45:36.443 DEBUG - Post-jobs : 
+20:45:36.443 DEBUG - Release semaphore on project : org.sonar.api.resources.Project@44e49229[id=23,key=check111,qualifier=TRK], with key batch-check111
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+Total time: 12.771s
+Final Memory: 21M/517M
+INFO: ------------------------------------------------------------------------
