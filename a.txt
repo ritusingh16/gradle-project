@@ -7,364 +7,1570 @@ INFO: Project configuration file: g:\mavenprac\simple-webapp\ems_db-master\sonar
 INFO: Default locale: "en_US", source code encoding: "UTF-8"
 INFO: Work directory: G:\mavenprac\simple-webapp\ems_db-master\.\.sonar
 INFO: SonarQube Server 5.1
-20:45:24.871 INFO  - Load global repositories
-20:45:24.886 DEBUG - Download: http://172.27.59.200:9000/batch/global (no proxy)
-20:45:25.121 INFO  - Load global repositories (done) | time=250ms
-20:45:25.121 INFO  - Server id: 20151228203714
-20:45:25.121 INFO  - User cache: C:\Users\ritus\.sonar\cache
-20:45:25.137 INFO  - Install plugins
-20:45:25.137 DEBUG - Download index of plugins
-20:45:25.137 DEBUG - Download: http://172.27.59.200:9000/deploy/plugins/index.txt (no proxy)
-20:45:25.293 DEBUG - Loaded 2575 properties from l10n bundles
-20:45:25.293 INFO  - Install JDBC driver
-20:45:25.293 DEBUG - Download index of jdbc-driver
-20:45:25.293 DEBUG - Download: http://172.27.59.200:9000/deploy/jdbc-driver.txt (no proxy)
-20:45:25.309 INFO  - Create JDBC datasource for jdbc:mysql://172.27.59.200:3306/sonar1?useUnicode=true&amp;characterEncoding=utf8
-20:45:25.716 DEBUG - Testing JDBC connection
-20:45:27.298 DEBUG - Download: http://172.27.59.200:9000/api/server (no proxy)
-20:45:27.360 INFO  - Initializing Hibernate
-20:45:27.360 DEBUG - hibernate.generate_statistics: false
-20:45:27.360 DEBUG - hibernate.dialect: org.sonar.core.persistence.dialect.MySql$MySqlWithDecimalDialect
-20:45:27.360 DEBUG - hibernate.connection.provider_class: org.sonar.jpa.session.CustomHibernateConnectionProvider
-20:45:29.427 INFO  - Load project repositories
-20:45:29.427 DEBUG - Download: http://172.27.59.200:9000/batch/project?key=check111&amp;preview=false (no proxy)
-20:45:30.203 INFO  - Load project repositories (done) | time=776ms
-20:45:30.203 INFO  - Load project settings
-20:45:30.764 INFO  - Load technical debt model
-20:45:30.842 DEBUG - Load technical debt model (done) | time=78ms
-20:45:30.842 INFO  - Apply project exclusions
-20:45:31.263 DEBUG - Acquire semaphore on project : org.sonar.api.resources.Project@44e49229[id=<null>,key=check111,qualifier=TRK], with key batch-check111
-20:45:31.404 INFO  - -------------  Scan knockout111
-20:45:31.404 INFO  - Load module settings
-20:45:31.591 DEBUG - Available languages:
-20:45:31.591 DEBUG -   * Java => "java"
-20:45:31.653 INFO  - Language is forced to java
-20:45:31.653 INFO  - Load rules
-20:45:31.981 DEBUG - Load rules (done) | time=328ms
-20:45:32.028 DEBUG - Code colorizer, supported languages: 
-20:45:32.028 DEBUG - Initializers : 
-20:45:32.028 INFO  - Base dir: G:\mavenprac\simple-webapp\ems_db-master
-20:45:32.028 INFO  - Working dir: G:\mavenprac\simple-webapp\ems_db-master\.sonar
-20:45:32.028 INFO  - Source paths: src
-20:45:32.028 INFO  - Source encoding: UTF-8, default locale: en_US
-20:45:32.028 INFO  - Index files
-20:45:32.043 INFO  - Excluded sources: 
-20:45:32.043 INFO  -   .
-20:45:32.043 DEBUG - Declared extensions of language org.sonar.batch.repository.language.Language@3a766cbf were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
-20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/controller/EmployeeController.java' is detected to be 'java'
-20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAO.java' is detected to be 'java'
-20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java' is detected to be 'java'
-20:45:32.075 DEBUG - Language of file 'src/main/java/com/sample/mvc/model/EmployeeCommand.java' is detected to be 'java'
-20:45:32.090 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeService.java' is detected to be 'java'
-20:45:32.090 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java' is detected to be 'java'
-20:45:32.121 INFO  - 6 files indexed
-20:45:32.121 INFO  - 0 files ignored because of inclusion/exclusion patterns
-20:45:32.527 INFO  - Quality profile for java: FindBugs
-20:45:32.558 DEBUG - Sensors : JavaSquidSensor -> Lines Sensor (wrapped) -> QProfileSensor -> InitialOpenIssuesSensor -> ProjectLinksSensor -> VersionEventsSensor -> org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9 -> SurefireSensor -> SCM Sensor (wrapped) -> CPD Sensor (wrapped)
-20:45:32.558 INFO  - Sensor JavaSquidSensor
-20:45:33.370 INFO  - Java Main Files AST scan...
-20:45:33.386 INFO  - 6 source files to be analyzed
-20:45:33.495 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.495 DEBUG - -----
-20:45:33.526 DEBUG - Completing symbol : Object
-20:45:33.542 DEBUG - Completing symbol : Map
-20:45:33.542 DEBUG - Completing symbol : Set
-20:45:33.542 DEBUG - Completing symbol : Collection
-20:45:33.542 DEBUG - Completing symbol : Iterable
-20:45:33.542 DEBUG - Completing symbol : Iterator
-20:45:33.542 DEBUG - Completing symbol : Consumer
-20:45:33.542 DEBUG - Completing symbol : FunctionalInterface
-20:45:33.542 DEBUG - Completing symbol : Documented
-20:45:33.542 DEBUG - Completing symbol : Retention
-20:45:33.542 DEBUG - Completing symbol : RetentionPolicy
-20:45:33.542 DEBUG - Completing symbol : Enum
-20:45:33.542 DEBUG - Completing symbol : Comparable
-20:45:33.542 DEBUG - Completing symbol : Class
-20:45:33.557 DEBUG - Completing symbol : Constructor
-20:45:33.557 DEBUG - Completing symbol : TypeVariable
-20:45:33.557 DEBUG - Completing symbol : ReflectionData
-20:45:33.557 DEBUG - Completing symbol : SoftReference
-20:45:33.557 DEBUG - Completing symbol : Reference
-20:45:33.557 DEBUG - Completing symbol : ReferenceQueue
-20:45:33.573 DEBUG - Completing symbol : Target
-20:45:33.573 DEBUG - Completing symbol : ElementType
-20:45:33.573 DEBUG - Completing symbol : Spliterator
-20:45:33.589 DEBUG - Completing symbol : Comparator
-20:45:33.589 DEBUG - Completing symbol : Function
-20:45:33.589 DEBUG - Completing symbol : ToIntFunction
-20:45:33.589 DEBUG - Completing symbol : ToLongFunction
-20:45:33.604 DEBUG - Completing symbol : ToDoubleFunction
-20:45:33.604 DEBUG - Completing symbol : Predicate
-20:45:33.604 DEBUG - Completing symbol : Stream
-20:45:33.604 DEBUG - Completing symbol : BaseStream
-20:45:33.604 DEBUG - Completing symbol : IntFunction
-20:45:33.604 DEBUG - Completing symbol : BinaryOperator
-20:45:33.604 DEBUG - Completing symbol : BiFunction
-20:45:33.604 DEBUG - Completing symbol : Optional
-20:45:33.604 DEBUG - Completing symbol : Supplier
-20:45:33.604 DEBUG - Completing symbol : BiConsumer
-20:45:33.620 DEBUG - Completing symbol : Collector
-20:45:33.620 DEBUG - Completing symbol : Builder
-20:45:33.620 DEBUG - Completing symbol : UnaryOperator
-20:45:33.620 DEBUG - Completing symbol : Entry
-20:45:33.620 DEBUG - Completing symbol : String
-20:45:33.620 DEBUG - Completing symbol : Serializable
-20:45:33.620 DEBUG - Completing symbol : CharSequence
-20:45:33.713 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.729 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.729 DEBUG - -----
-20:45:33.729 DEBUG - Completing symbol : Object
-20:45:33.729 DEBUG - Completing symbol : List
-20:45:33.745 DEBUG - Completing symbol : Collection
-20:45:33.745 DEBUG - Completing symbol : Iterable
-20:45:33.745 DEBUG - Completing symbol : Iterator
-20:45:33.745 DEBUG - Completing symbol : Consumer
-20:45:33.745 DEBUG - Completing symbol : FunctionalInterface
-20:45:33.745 DEBUG - Completing symbol : Documented
-20:45:33.745 DEBUG - Completing symbol : Retention
-20:45:33.745 DEBUG - Completing symbol : RetentionPolicy
-20:45:33.745 DEBUG - Completing symbol : Enum
-20:45:33.745 DEBUG - Completing symbol : Comparable
-20:45:33.745 DEBUG - Completing symbol : Class
-20:45:33.745 DEBUG - Completing symbol : Constructor
-20:45:33.745 DEBUG - Completing symbol : TypeVariable
-20:45:33.745 DEBUG - Completing symbol : ReflectionData
-20:45:33.745 DEBUG - Completing symbol : SoftReference
-20:45:33.745 DEBUG - Completing symbol : Reference
-20:45:33.745 DEBUG - Completing symbol : ReferenceQueue
-20:45:33.745 DEBUG - Completing symbol : Map
-20:45:33.745 DEBUG - Completing symbol : Set
-20:45:33.745 DEBUG - Completing symbol : Spliterator
-20:45:33.745 DEBUG - Completing symbol : Comparator
-20:45:33.745 DEBUG - Completing symbol : Function
-20:45:33.745 DEBUG - Completing symbol : ToIntFunction
-20:45:33.745 DEBUG - Completing symbol : ToLongFunction
-20:45:33.745 DEBUG - Completing symbol : ToDoubleFunction
-20:45:33.745 DEBUG - Completing symbol : Entry
-20:45:33.760 DEBUG - Completing symbol : BiConsumer
-20:45:33.760 DEBUG - Completing symbol : BiFunction
-20:45:33.760 DEBUG - Completing symbol : Target
-20:45:33.760 DEBUG - Completing symbol : ElementType
-20:45:33.760 DEBUG - Completing symbol : Predicate
-20:45:33.760 DEBUG - Completing symbol : Stream
-20:45:33.760 DEBUG - Completing symbol : BaseStream
-20:45:33.760 DEBUG - Completing symbol : IntFunction
-20:45:33.760 DEBUG - Completing symbol : BinaryOperator
-20:45:33.760 DEBUG - Completing symbol : Optional
-20:45:33.760 DEBUG - Completing symbol : Supplier
-20:45:33.760 DEBUG - Completing symbol : Collector
-20:45:33.760 DEBUG - Completing symbol : Builder
-20:45:33.760 DEBUG - Completing symbol : UnaryOperator
-20:45:33.760 DEBUG - Completing symbol : ListIterator
-20:45:33.776 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.807 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.807 DEBUG - -----
-20:45:33.823 DEBUG - Completing symbol : Object
-20:45:33.823 DEBUG - Completing symbol : List
-20:45:33.823 DEBUG - Completing symbol : Collection
-20:45:33.823 DEBUG - Completing symbol : Iterable
-20:45:33.823 DEBUG - Completing symbol : Iterator
-20:45:33.823 DEBUG - Completing symbol : Consumer
-20:45:33.823 DEBUG - Completing symbol : FunctionalInterface
-20:45:33.823 DEBUG - Completing symbol : Documented
-20:45:33.823 DEBUG - Completing symbol : Retention
-20:45:33.823 DEBUG - Completing symbol : RetentionPolicy
-20:45:33.823 DEBUG - Completing symbol : Enum
-20:45:33.823 DEBUG - Completing symbol : Comparable
-20:45:33.823 DEBUG - Completing symbol : Class
-20:45:33.823 DEBUG - Completing symbol : Constructor
-20:45:33.823 DEBUG - Completing symbol : TypeVariable
-20:45:33.823 DEBUG - Completing symbol : ReflectionData
-20:45:33.823 DEBUG - Completing symbol : SoftReference
-20:45:33.823 DEBUG - Completing symbol : Reference
-20:45:33.823 DEBUG - Completing symbol : ReferenceQueue
-20:45:33.823 DEBUG - Completing symbol : Map
-20:45:33.823 DEBUG - Completing symbol : Set
-20:45:33.838 DEBUG - Completing symbol : Spliterator
-20:45:33.838 DEBUG - Completing symbol : Comparator
-20:45:33.838 DEBUG - Completing symbol : Function
-20:45:33.838 DEBUG - Completing symbol : ToIntFunction
-20:45:33.838 DEBUG - Completing symbol : ToLongFunction
-20:45:33.838 DEBUG - Completing symbol : ToDoubleFunction
-20:45:33.838 DEBUG - Completing symbol : Entry
-20:45:33.838 DEBUG - Completing symbol : BiConsumer
-20:45:33.838 DEBUG - Completing symbol : BiFunction
-20:45:33.854 DEBUG - Completing symbol : Target
-20:45:33.854 DEBUG - Completing symbol : ElementType
-20:45:33.854 DEBUG - Completing symbol : Predicate
-20:45:33.854 DEBUG - Completing symbol : Stream
-20:45:33.854 DEBUG - Completing symbol : BaseStream
-20:45:33.854 DEBUG - Completing symbol : IntFunction
-20:45:33.854 DEBUG - Completing symbol : BinaryOperator
-20:45:33.854 DEBUG - Completing symbol : Optional
-20:45:33.854 DEBUG - Completing symbol : Supplier
-20:45:33.854 DEBUG - Completing symbol : Collector
-20:45:33.854 DEBUG - Completing symbol : Builder
-20:45:33.854 DEBUG - Completing symbol : UnaryOperator
-20:45:33.854 DEBUG - Completing symbol : ListIterator
-20:45:33.869 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.885 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.885 DEBUG - -----
-20:45:33.885 DEBUG - Completing symbol : Object
-20:45:33.885 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.901 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.901 DEBUG - -----
-20:45:33.901 DEBUG - Completing symbol : Object
-20:45:33.901 DEBUG - Completing symbol : List
-20:45:33.901 DEBUG - Completing symbol : Collection
-20:45:33.901 DEBUG - Completing symbol : Iterable
-20:45:33.901 DEBUG - Completing symbol : Iterator
-20:45:33.901 DEBUG - Completing symbol : Consumer
-20:45:33.901 DEBUG - Completing symbol : FunctionalInterface
-20:45:33.901 DEBUG - Completing symbol : Documented
-20:45:33.901 DEBUG - Completing symbol : Retention
-20:45:33.901 DEBUG - Completing symbol : RetentionPolicy
-20:45:33.901 DEBUG - Completing symbol : Enum
-20:45:33.901 DEBUG - Completing symbol : Comparable
-20:45:33.901 DEBUG - Completing symbol : Class
-20:45:33.901 DEBUG - Completing symbol : Constructor
-20:45:33.901 DEBUG - Completing symbol : TypeVariable
-20:45:33.901 DEBUG - Completing symbol : ReflectionData
-20:45:33.901 DEBUG - Completing symbol : SoftReference
-20:45:33.901 DEBUG - Completing symbol : Reference
-20:45:33.901 DEBUG - Completing symbol : ReferenceQueue
-20:45:33.901 DEBUG - Completing symbol : Map
-20:45:33.901 DEBUG - Completing symbol : Set
-20:45:33.901 DEBUG - Completing symbol : Spliterator
-20:45:33.901 DEBUG - Completing symbol : Comparator
-20:45:33.901 DEBUG - Completing symbol : Function
-20:45:33.901 DEBUG - Completing symbol : ToIntFunction
-20:45:33.901 DEBUG - Completing symbol : ToLongFunction
-20:45:33.901 DEBUG - Completing symbol : ToDoubleFunction
-20:45:33.901 DEBUG - Completing symbol : Entry
-20:45:33.901 DEBUG - Completing symbol : BiConsumer
-20:45:33.901 DEBUG - Completing symbol : BiFunction
-20:45:33.901 DEBUG - Completing symbol : Target
-20:45:33.901 DEBUG - Completing symbol : ElementType
-20:45:33.901 DEBUG - Completing symbol : Predicate
-20:45:33.901 DEBUG - Completing symbol : Stream
-20:45:33.901 DEBUG - Completing symbol : BaseStream
-20:45:33.901 DEBUG - Completing symbol : IntFunction
-20:45:33.901 DEBUG - Completing symbol : BinaryOperator
-20:45:33.901 DEBUG - Completing symbol : Optional
-20:45:33.901 DEBUG - Completing symbol : Supplier
-20:45:33.901 DEBUG - Completing symbol : Collector
-20:45:33.901 DEBUG - Completing symbol : Builder
-20:45:33.901 DEBUG - Completing symbol : UnaryOperator
-20:45:33.901 DEBUG - Completing symbol : ListIterator
-20:45:33.916 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.916 DEBUG - ----- Classpath analyzed by Squid:
-20:45:33.916 DEBUG - -----
-20:45:33.916 DEBUG - Completing symbol : Object
-20:45:33.916 DEBUG - Completing symbol : List
-20:45:33.916 DEBUG - Completing symbol : Collection
-20:45:33.916 DEBUG - Completing symbol : Iterable
-20:45:33.916 DEBUG - Completing symbol : Iterator
-20:45:33.916 DEBUG - Completing symbol : Consumer
-20:45:33.916 DEBUG - Completing symbol : FunctionalInterface
-20:45:33.916 DEBUG - Completing symbol : Documented
-20:45:33.916 DEBUG - Completing symbol : Retention
-20:45:33.916 DEBUG - Completing symbol : RetentionPolicy
-20:45:33.916 DEBUG - Completing symbol : Enum
-20:45:33.916 DEBUG - Completing symbol : Comparable
-20:45:33.916 DEBUG - Completing symbol : Class
-20:45:33.916 DEBUG - Completing symbol : Constructor
-20:45:33.916 DEBUG - Completing symbol : TypeVariable
-20:45:33.916 DEBUG - Completing symbol : ReflectionData
-20:45:33.916 DEBUG - Completing symbol : SoftReference
-20:45:33.916 DEBUG - Completing symbol : Reference
-20:45:33.932 DEBUG - Completing symbol : ReferenceQueue
-20:45:33.932 DEBUG - Completing symbol : Map
-20:45:33.932 DEBUG - Completing symbol : Set
-20:45:33.932 DEBUG - Completing symbol : Spliterator
-20:45:33.932 DEBUG - Completing symbol : Comparator
-20:45:33.932 DEBUG - Completing symbol : Function
-20:45:33.932 DEBUG - Completing symbol : ToIntFunction
-20:45:33.932 DEBUG - Completing symbol : ToLongFunction
-20:45:33.932 DEBUG - Completing symbol : ToDoubleFunction
-20:45:33.932 DEBUG - Completing symbol : Entry
-20:45:33.932 DEBUG - Completing symbol : BiConsumer
-20:45:33.932 DEBUG - Completing symbol : BiFunction
-20:45:33.932 DEBUG - Completing symbol : Target
-20:45:33.932 DEBUG - Completing symbol : ElementType
-20:45:33.932 DEBUG - Completing symbol : Predicate
-20:45:33.932 DEBUG - Completing symbol : Stream
-20:45:33.932 DEBUG - Completing symbol : BaseStream
-20:45:33.932 DEBUG - Completing symbol : IntFunction
-20:45:33.932 DEBUG - Completing symbol : BinaryOperator
-20:45:33.932 DEBUG - Completing symbol : Optional
-20:45:33.932 DEBUG - Completing symbol : Supplier
-20:45:33.932 DEBUG - Completing symbol : Collector
-20:45:33.932 DEBUG - Completing symbol : Builder
-20:45:33.932 DEBUG - Completing symbol : UnaryOperator
-20:45:33.932 DEBUG - Completing symbol : ListIterator
-20:45:33.932 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
-20:45:33.932 INFO  - Java Main Files AST scan done: 562 ms
-20:45:33.932 WARN  - Java bytecode has not been made available to the analyzer. The org.sonar.java.bytecode.visitor.DependenciesVisitor@61a7ed9c are disabled.
-20:45:33.932 INFO  - Java Test Files AST scan...
-20:45:33.932 INFO  - 0 source files to be analyzed
-20:45:33.947 INFO  - Java Test Files AST scan done: 15 ms
-20:45:33.947 INFO  - 6/6 source files analyzed
-20:45:33.947 INFO  - 0/0 source files analyzed
-20:45:33.947 INFO  - Sensor JavaSquidSensor (done) | time=1389ms
-20:45:33.947 INFO  - Sensor Lines Sensor (wrapped)
-20:45:33.963 INFO  - Sensor Lines Sensor (wrapped) (done) | time=16ms
-20:45:33.963 INFO  - Sensor QProfileSensor
-20:45:33.963 INFO  - Sensor QProfileSensor (done) | time=0ms
-20:45:33.963 INFO  - Sensor InitialOpenIssuesSensor
-20:45:33.979 INFO  - Sensor InitialOpenIssuesSensor (done) | time=16ms
-20:45:33.979 INFO  - Sensor ProjectLinksSensor
-20:45:33.994 INFO  - Sensor ProjectLinksSensor (done) | time=15ms
-20:45:33.994 INFO  - Sensor VersionEventsSensor
-20:45:34.135 INFO  - Sensor VersionEventsSensor (done) | time=141ms
-20:45:34.135 INFO  - Sensor org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9
-20:45:34.135 WARN  - Findbugs needs sources to be compiled. Please build project before executing sonar or check the location of compiled classes to make it possible for Findbugs to analyse your project.
-20:45:34.135 INFO  - Sensor org.sonar.plugins.findbugs.FindbugsSensor@76cbb7b9 (done) | time=0ms
-20:45:34.135 INFO  - Sensor SurefireSensor
-20:45:34.135 INFO  - parsing G:\mavenprac\simple-webapp\ems_db-master\.sonar\build\surefire-reports
-20:45:34.135 WARN  - Reports path not found: G:\mavenprac\simple-webapp\ems_db-master\.sonar\build\surefire-reports
-20:45:34.135 INFO  - Sensor SurefireSensor (done) | time=0ms
-20:45:34.135 INFO  - Sensor SCM Sensor (wrapped)
-20:45:34.150 INFO  - Sensor SCM Sensor (wrapped) (done) | time=15ms
-20:45:34.150 INFO  - Sensor CPD Sensor (wrapped)
-20:45:34.150 INFO  - JavaCpdEngine is used for java
-20:45:34.150 INFO  - Cross-project analysis disabled
-20:45:34.166 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.197 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Populating index from [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 DEBUG - Detection of duplications for [moduleKey=check111, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
-20:45:34.213 INFO  - Sensor CPD Sensor (wrapped) (done) | time=63ms
-20:45:34.213 INFO  - No quality gate is configured.
-20:45:34.259 INFO  - Compare to previous analysis (2015-12-28)
-20:45:34.259 INFO  - Compare over 30 days (2015-11-28, analysis of Mon Dec 28 20:44:31 IST 2015)
-20:45:34.447 INFO  - Execute decorators...
-20:45:34.447 DEBUG - Decorators: ManualMeasureDecorator -> org.sonar.batch.issue.tracking.IssueTrackingDecorator@13b9da00 -> QProfileEventsDecorator -> org.sonar.batch.design.ProjectDsmDecorator@79b49b1d -> org.sonar.batch.design.SubProjectDsmDecorator@4d425872 -> org.sonar.batch.design.DirectoryDsmDecorator@1076f200 -> FileTangleIndexDecorator -> SumDuplicationsDecorator -> UnitTestDecorator -> org.sonar.plugins.core.security.ApplyProjectRolesDecorator@182b9c6f -> org.sonar.plugins.core.sensors.DirectoriesDecorator@748ef9e -> org.sonar.plugins.core.sensors.FilesDecorator@1b1cc90 -> org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@356eb8d4 -> org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@3dbf2603 -> org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@7f593176 -> org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@3fad151c -> org.sonar.plugins.core.timemachine.NewCoverageAggregator@30779b35 -> f(lines) -> f(generated_lines) -> f(ncloc) -> f(generated_ncloc) -> f(classes) -> f(packages) -> f(functions) -> f(accessors) -> f(statements) -> f(public_api) -> f(comment_lines) -> f(public_undocumented_api) -> f(commented_out_code_lines) -> f(complexity) -> f(complexity_in_classes) -> f(complexity_in_functions) -> f(class_complexity_distribution) -> f(function_complexity_distribution) -> f(file_complexity_distribution) -> f(lines_to_cover) -> f(uncovered_lines) -> f(conditions_to_cover) -> f(uncovered_conditions) -> f(it_lines_to_cover) -> f(it_uncovered_lines) -> f(it_conditions_to_cover) -> f(it_uncovered_conditions) -> f(overall_lines_to_cover) -> f(overall_uncovered_lines) -> f(overall_conditions_to_cover) -> f(overall_uncovered_conditions) -> f(rfc) -> f(rfc_distribution) -> f(lcom4_distribution) -> f(package_cycles) -> f(package_tangles) -> f(package_feedback_edges) -> f(package_edges_weight) -> f(new_lines_to_cover) -> f(new_uncovered_lines) -> f(new_conditions_to_cover) -> f(new_uncovered_conditions) -> f(new_it_lines_to_cover) -> f(new_it_uncovered_lines) -> f(new_it_conditions_to_cover) -> f(new_it_uncovered_conditions) -> f(new_overall_lines_to_cover) -> f(new_overall_uncovered_lines) -> f(new_overall_conditions_to_cover) -> f(new_overall_uncovered_conditions) -> org.sonar.batch.language.LanguageDistributionDecorator@67d30d56 -> org.sonar.batch.debt.DebtDecorator@23532a0e -> org.sonar.batch.debt.NewDebtDecorator@3680dff2 -> DirectoryTangleIndexDecorator -> org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@7e04a93f -> CountUnresolvedIssuesDecorator -> CountFalsePositivesDecorator -> CommentDensityDecorator -> f(file_complexity) -> f(class_complexity) -> f(function_complexity) -> org.sonar.plugins.core.sensors.LineCoverageDecorator@558ff531 -> org.sonar.plugins.core.sensors.CoverageDecorator@3fd96ec8 -> org.sonar.plugins.core.sensors.BranchCoverageDecorator@4a4cc870 -> org.sonar.plugins.core.sensors.ItLineCoverageDecorator@b50042d -> org.sonar.plugins.core.sensors.ItCoverageDecorator@21dc5e0b -> org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@5587cbd6 -> org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@79a4865e -> org.sonar.plugins.core.sensors.OverallCoverageDecorator@725e942b -> org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@3131a06d -> org.sonar.batch.debt.SqaleRatingDecorator@25cf767e -> org.sonar.plugins.core.timemachine.TendencyDecorator@60b4dacc -> VariationDecorator
-20:45:35.086 DEBUG - Decorator time:
-	ManualMeasureDecorator: 157ms
-	org.sonar.batch.issue.tracking.IssueTrackingDecorator@13b9da00: 0ms
+14:20:21.215 INFO  - Load global repositories
+14:20:25.663 DEBUG - Download: http://172.27.59.200:9000/batch/global (no proxy)
+14:20:25.943 INFO  - Load global repositories (done) | time=4728ms
+14:20:25.943 INFO  - Server id: 20160107132122
+14:20:25.959 INFO  - User cache: C:\Users\ritus\.sonar\cache
+14:20:25.959 INFO  - Install plugins
+14:20:25.959 DEBUG - Download index of plugins
+14:20:25.959 DEBUG - Download: http://172.27.59.200:9000/deploy/plugins/index.txt (no proxy)
+14:20:26.068 DEBUG - Loaded 2133 properties from l10n bundles
+14:20:26.068 INFO  - Install JDBC driver
+14:20:26.068 DEBUG - Download index of jdbc-driver
+14:20:26.068 DEBUG - Download: http://172.27.59.200:9000/deploy/jdbc-driver.txt (no proxy)
+14:20:26.068 INFO  - Create JDBC datasource for jdbc:mysql://172.27.59.200:3306/sonar1?useUnicode=true&amp;characterEncoding=utf8
+14:20:26.474 DEBUG - Testing JDBC connection
+14:20:27.925 DEBUG - Download: http://172.27.59.200:9000/api/server (no proxy)
+14:20:28.049 INFO  - Initializing Hibernate
+14:20:28.049 DEBUG - hibernate.generate_statistics: false
+14:20:28.049 DEBUG - hibernate.dialect: org.sonar.core.persistence.dialect.MySql$MySqlWithDecimalDialect
+14:20:28.049 DEBUG - hibernate.connection.provider_class: org.sonar.jpa.session.CustomHibernateConnectionProvider
+14:20:29.937 INFO  - Load project repositories
+14:20:29.937 DEBUG - Download: http://172.27.59.200:9000/batch/project?key=check121hardcode&amp;preview=false (no proxy)
+14:20:30.062 INFO  - Load project repositories (done) | time=125ms
+14:20:30.062 INFO  - Load project settings
+14:20:30.767 INFO  - Load technical debt model
+14:20:30.782 DEBUG - Load technical debt model (done) | time=15ms
+14:20:30.782 INFO  - Apply project exclusions
+14:20:31.235 DEBUG - Acquire semaphore on project : org.sonar.api.resources.Project@199763ea[id=<null>,key=check121hardcode,qualifier=TRK], with key batch-check121hardcode
+14:20:31.266 WARN  - SCM provider autodetection failed. No SCM provider claims to support this project. Please use sonar.scm.provider to define SCM of your project.
+14:20:31.282 INFO  - -------------  Scan knockout121hardcode
+14:20:31.282 INFO  - Load module settings
+14:20:31.406 DEBUG - Available languages:
+14:20:31.406 DEBUG -   * Java => "java"
+14:20:31.422 INFO  - Language is forced to java
+14:20:31.438 INFO  - Load rules
+14:20:31.672 DEBUG - Load rules (done) | time=234ms
+14:20:31.703 DEBUG - Code colorizer, supported languages: 
+14:20:31.718 DEBUG - Initializers : 
+14:20:31.718 INFO  - Base dir: G:\mavenprac\simple-webapp\ems_db-master
+14:20:31.718 INFO  - Working dir: G:\mavenprac\simple-webapp\ems_db-master\.sonar
+14:20:31.718 INFO  - Source paths: src
+14:20:31.718 INFO  - Source encoding: UTF-8, default locale: en_US
+14:20:31.718 INFO  - Index files
+14:20:31.734 INFO  - Excluded sources: 
+14:20:31.734 INFO  -   .
+14:20:31.734 DEBUG - Declared extensions of language org.sonar.batch.repository.language.Language@38371a7e were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+14:20:31.750 DEBUG - Language of file 'src/main/java/com/sample/mvc/controller/EmployeeController.java' is detected to be 'java'
+14:20:31.765 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAO.java' is detected to be 'java'
+14:20:31.765 DEBUG - Language of file 'src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java' is detected to be 'java'
+14:20:31.765 DEBUG - Language of file 'src/main/java/com/sample/mvc/model/EmployeeCommand.java' is detected to be 'java'
+14:20:31.781 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeService.java' is detected to be 'java'
+14:20:31.781 DEBUG - Language of file 'src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java' is detected to be 'java'
+14:20:31.781 INFO  - 6 files indexed
+14:20:31.781 INFO  - 0 files ignored because of inclusion/exclusion patterns
+14:20:32.140 INFO  - Quality profile for java: custome
+14:20:32.171 DEBUG - Sensors : JavaSquidSensor -> Lines Sensor (wrapped) -> QProfileSensor -> InitialOpenIssuesSensor -> ProjectLinksSensor -> VersionEventsSensor -> SurefireSensor -> SCM Sensor (wrapped) -> CPD Sensor (wrapped)
+14:20:32.171 INFO  - Sensor JavaSquidSensor
+14:20:32.405 INFO  - Configured Java source version: none
+14:20:32.436 INFO  - JavaClasspath initialization...
+14:20:32.436 INFO  - JavaClasspath initialization done: 0 ms
+14:20:32.436 INFO  - JavaTestClasspath initialization...
+14:20:32.436 INFO  - JavaTestClasspath initialization done: 0 ms
+14:20:32.732 INFO  - Java Main Files AST scan...
+14:20:32.732 INFO  - 6 source files to be analyzed
+14:20:32.810 DEBUG - ----- Classpath analyzed by Squid:
+14:20:32.810 DEBUG - -----
+14:20:32.842 DEBUG - Completing symbol : Object
+14:20:32.857 DEBUG - Completing symbol : Map
+14:20:32.857 DEBUG - Completing symbol : Set
+14:20:32.857 DEBUG - Completing symbol : Collection
+14:20:32.857 DEBUG - Completing symbol : Iterable
+14:20:32.857 DEBUG - Completing symbol : Iterator
+14:20:32.857 DEBUG - Completing symbol : Consumer
+14:20:32.857 DEBUG - Completing symbol : FunctionalInterface
+14:20:32.857 DEBUG - Completing symbol : Documented
+14:20:32.857 DEBUG - Completing symbol : Retention
+14:20:32.857 DEBUG - Completing symbol : RetentionPolicy
+14:20:32.857 DEBUG - Completing symbol : Enum
+14:20:32.857 DEBUG - Completing symbol : Comparable
+14:20:32.857 DEBUG - Completing symbol : Class
+14:20:32.857 DEBUG - Completing symbol : Constructor
+14:20:32.873 DEBUG - Completing symbol : TypeVariable
+14:20:32.873 DEBUG - Completing symbol : CallerSensitive
+14:20:32.873 DEBUG - Completing symbol : Target
+14:20:32.873 DEBUG - Completing symbol : ElementType
+14:20:32.873 DEBUG - Completing symbol : ReflectionData
+14:20:32.873 DEBUG - Completing symbol : SoftReference
+14:20:32.873 DEBUG - Completing symbol : Reference
+14:20:32.873 DEBUG - Completing symbol : ReferenceQueue
+14:20:32.873 DEBUG - Completing symbol : Spliterator
+14:20:32.873 DEBUG - Completing symbol : Comparator
+14:20:32.873 DEBUG - Completing symbol : Function
+14:20:32.873 DEBUG - Completing symbol : ToIntFunction
+14:20:32.873 DEBUG - Completing symbol : ToLongFunction
+14:20:32.873 DEBUG - Completing symbol : ToDoubleFunction
+14:20:32.888 DEBUG - Completing symbol : Predicate
+14:20:32.888 DEBUG - Completing symbol : Stream
+14:20:32.888 DEBUG - Completing symbol : BaseStream
+14:20:32.888 DEBUG - Completing symbol : IntFunction
+14:20:32.888 DEBUG - Completing symbol : BinaryOperator
+14:20:32.888 DEBUG - Completing symbol : BiFunction
+14:20:32.888 DEBUG - Completing symbol : Optional
+14:20:32.888 DEBUG - Completing symbol : Supplier
+14:20:32.888 DEBUG - Completing symbol : BiConsumer
+14:20:32.888 DEBUG - Completing symbol : Collector
+14:20:32.888 DEBUG - Completing symbol : Builder
+14:20:32.888 DEBUG - Completing symbol : SafeVarargs
+14:20:32.888 DEBUG - Completing symbol : UnaryOperator
+14:20:32.888 DEBUG - Completing symbol : Entry
+14:20:32.888 DEBUG - Completing symbol : String
+14:20:32.904 DEBUG - Completing symbol : Deprecated
+14:20:32.904 DEBUG - Completing symbol : Serializable
+14:20:32.904 DEBUG - Completing symbol : CharSequence
+14:20:32.966 DEBUG - Exploring Exploded Graph for method viewHome at line 30
+14:20:32.966 DEBUG - visiting node STRING_LITERAL at line 31
+14:20:32.966 DEBUG - Exploring Exploded Graph for method listContacts at line 35
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 36
+14:20:32.982 DEBUG - visiting node NEW_CLASS at line 36
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 36
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 36
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 37
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 37
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 37
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 37
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 37
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 37
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 37
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 38
+14:20:32.982 DEBUG - Exploring Exploded Graph for method addEmployee at line 43
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 45
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 45
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 45
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 45
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 46
+14:20:32.982 DEBUG - visiting node NEW_CLASS at line 46
+14:20:32.982 DEBUG - Exploring Exploded Graph for method getEmployeeById at line 50
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 51
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 51
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 51
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 51
+14:20:32.982 DEBUG - visiting node VARIABLE at line 51
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 52
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 52
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 52
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 52
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 52
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 53
+14:20:32.982 DEBUG - Exploring Exploded Graph for method updateEmployee at line 57
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 59
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 59
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 59
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 59
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 60
+14:20:32.982 DEBUG - Exploring Exploded Graph for method deleteEmplyee at line 64
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 66
+14:20:32.982 DEBUG - visiting node IDENTIFIER at line 66
+14:20:32.982 DEBUG - visiting node MEMBER_SELECT at line 66
+14:20:32.982 DEBUG - visiting node METHOD_INVOCATION at line 66
+14:20:32.982 DEBUG - visiting node STRING_LITERAL at line 67
+14:20:33.013 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree : [
+      AnnotationTree
+        IdentifierTree
+        Arguments
+      ]
+    TypeParameters : [
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      IdentifierTree
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+            IdentifierTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+        ]
+      TypeParameters
+      IdentifierTree
+      BlockTree : [
+        ReturnStatementTree
+          LiteralTree
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree
+        ParameterizedTypeTree
+          IdentifierTree
+          TypeArguments : [
+            IdentifierTree
+            IdentifierTree
+            ]
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+              IdentifierTree
+              Arguments
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+              MemberSelectExpressionTree
+                IdentifierTree
+                IdentifierTree
+              Arguments
+        ReturnStatementTree
+          LiteralTree
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+            IdentifierTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree : [
+          AnnotationTree
+            IdentifierTree
+            Arguments
+          ]
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ReturnStatementTree
+          NewClassTree
+            IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree : [
+          AnnotationTree
+            IdentifierTree
+            Arguments
+          ]
+        IdentifierTree
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        VariableTree
+          ModifiersTree
+          IdentifierTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ReturnStatementTree
+          LiteralTree
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+            IdentifierTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree : [
+          AnnotationTree
+            IdentifierTree
+            Arguments
+          ]
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ReturnStatementTree
+          LiteralTree
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree : [
+          AnnotationTree
+            IdentifierTree
+            Arguments
+          ]
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ReturnStatementTree
+          LiteralTree
+        ]
+    ]
+  ]
+
+14:20:33.107 DEBUG - ----- Classpath analyzed by Squid:
+14:20:33.107 DEBUG - -----
+14:20:33.122 DEBUG - Completing symbol : Object
+14:20:33.122 DEBUG - Completing symbol : List
+14:20:33.138 DEBUG - Completing symbol : Collection
+14:20:33.138 DEBUG - Completing symbol : Iterable
+14:20:33.138 DEBUG - Completing symbol : Iterator
+14:20:33.138 DEBUG - Completing symbol : Consumer
+14:20:33.138 DEBUG - Completing symbol : FunctionalInterface
+14:20:33.138 DEBUG - Completing symbol : Documented
+14:20:33.138 DEBUG - Completing symbol : Retention
+14:20:33.138 DEBUG - Completing symbol : RetentionPolicy
+14:20:33.138 DEBUG - Completing symbol : Enum
+14:20:33.138 DEBUG - Completing symbol : Comparable
+14:20:33.138 DEBUG - Completing symbol : Class
+14:20:33.138 DEBUG - Completing symbol : Constructor
+14:20:33.138 DEBUG - Completing symbol : TypeVariable
+14:20:33.138 DEBUG - Completing symbol : CallerSensitive
+14:20:33.138 DEBUG - Completing symbol : Target
+14:20:33.138 DEBUG - Completing symbol : ElementType
+14:20:33.138 DEBUG - Completing symbol : ReflectionData
+14:20:33.154 DEBUG - Completing symbol : SoftReference
+14:20:33.154 DEBUG - Completing symbol : Reference
+14:20:33.154 DEBUG - Completing symbol : ReferenceQueue
+14:20:33.169 DEBUG - Completing symbol : Map
+14:20:33.169 DEBUG - Completing symbol : Set
+14:20:33.169 DEBUG - Completing symbol : Spliterator
+14:20:33.169 DEBUG - Completing symbol : Comparator
+14:20:33.169 DEBUG - Completing symbol : Function
+14:20:33.169 DEBUG - Completing symbol : ToIntFunction
+14:20:33.169 DEBUG - Completing symbol : ToLongFunction
+14:20:33.169 DEBUG - Completing symbol : ToDoubleFunction
+14:20:33.169 DEBUG - Completing symbol : Entry
+14:20:33.185 DEBUG - Completing symbol : BiConsumer
+14:20:33.185 DEBUG - Completing symbol : BiFunction
+14:20:33.185 DEBUG - Completing symbol : Predicate
+14:20:33.185 DEBUG - Completing symbol : Stream
+14:20:33.185 DEBUG - Completing symbol : BaseStream
+14:20:33.185 DEBUG - Completing symbol : IntFunction
+14:20:33.185 DEBUG - Completing symbol : BinaryOperator
+14:20:33.185 DEBUG - Completing symbol : Optional
+14:20:33.185 DEBUG - Completing symbol : Supplier
+14:20:33.185 DEBUG - Completing symbol : Collector
+14:20:33.185 DEBUG - Completing symbol : Builder
+14:20:33.200 DEBUG - Completing symbol : SafeVarargs
+14:20:33.200 DEBUG - Completing symbol : UnaryOperator
+14:20:33.200 DEBUG - Completing symbol : ListIterator
+14:20:33.216 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree
+    TypeParameters : [
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      ParameterizedTypeTree
+        IdentifierTree
+        TypeArguments : [
+          IdentifierTree
+          ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    ]
+  ]
+
+14:20:33.232 DEBUG - ----- Classpath analyzed by Squid:
+14:20:33.232 DEBUG - -----
+14:20:33.247 DEBUG - Completing symbol : Object
+14:20:33.247 DEBUG - Completing symbol : List
+14:20:33.247 DEBUG - Completing symbol : Collection
+14:20:33.247 DEBUG - Completing symbol : Iterable
+14:20:33.247 DEBUG - Completing symbol : Iterator
+14:20:33.247 DEBUG - Completing symbol : Consumer
+14:20:33.247 DEBUG - Completing symbol : FunctionalInterface
+14:20:33.247 DEBUG - Completing symbol : Documented
+14:20:33.247 DEBUG - Completing symbol : Retention
+14:20:33.247 DEBUG - Completing symbol : RetentionPolicy
+14:20:33.247 DEBUG - Completing symbol : Enum
+14:20:33.247 DEBUG - Completing symbol : Comparable
+14:20:33.247 DEBUG - Completing symbol : Class
+14:20:33.247 DEBUG - Completing symbol : Constructor
+14:20:33.247 DEBUG - Completing symbol : TypeVariable
+14:20:33.263 DEBUG - Completing symbol : CallerSensitive
+14:20:33.263 DEBUG - Completing symbol : Target
+14:20:33.263 DEBUG - Completing symbol : ElementType
+14:20:33.263 DEBUG - Completing symbol : ReflectionData
+14:20:33.263 DEBUG - Completing symbol : SoftReference
+14:20:33.263 DEBUG - Completing symbol : Reference
+14:20:33.263 DEBUG - Completing symbol : ReferenceQueue
+14:20:33.263 DEBUG - Completing symbol : Map
+14:20:33.263 DEBUG - Completing symbol : Set
+14:20:33.263 DEBUG - Completing symbol : Spliterator
+14:20:33.263 DEBUG - Completing symbol : Comparator
+14:20:33.263 DEBUG - Completing symbol : Function
+14:20:33.263 DEBUG - Completing symbol : ToIntFunction
+14:20:33.263 DEBUG - Completing symbol : ToLongFunction
+14:20:33.263 DEBUG - Completing symbol : ToDoubleFunction
+14:20:33.263 DEBUG - Completing symbol : Entry
+14:20:33.263 DEBUG - Completing symbol : BiConsumer
+14:20:33.263 DEBUG - Completing symbol : BiFunction
+14:20:33.278 DEBUG - Completing symbol : Predicate
+14:20:33.278 DEBUG - Completing symbol : Stream
+14:20:33.278 DEBUG - Completing symbol : BaseStream
+14:20:33.278 DEBUG - Completing symbol : IntFunction
+14:20:33.278 DEBUG - Completing symbol : BinaryOperator
+14:20:33.278 DEBUG - Completing symbol : Optional
+14:20:33.278 DEBUG - Completing symbol : Supplier
+14:20:33.278 DEBUG - Completing symbol : Collector
+14:20:33.278 DEBUG - Completing symbol : Builder
+14:20:33.278 DEBUG - Completing symbol : SafeVarargs
+14:20:33.278 DEBUG - Completing symbol : UnaryOperator
+14:20:33.278 DEBUG - Completing symbol : ListIterator
+14:20:33.278 DEBUG - Exploring Exploded Graph for method addEmployee at line 20
+14:20:33.278 DEBUG - visiting node IDENTIFIER at line 21
+14:20:33.278 DEBUG - visiting node IDENTIFIER at line 21
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 21
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 21
+14:20:33.278 DEBUG - visiting node METHOD_INVOCATION at line 21
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 21
+14:20:33.278 DEBUG - visiting node METHOD_INVOCATION at line 21
+14:20:33.278 DEBUG - Exploring Exploded Graph for method deleteEmployee at line 24
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 25
+14:20:33.278 DEBUG - visiting node IDENTIFIER at line 25
+14:20:33.278 DEBUG - visiting node IDENTIFIER at line 25
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 25
+14:20:33.278 DEBUG - visiting node METHOD_INVOCATION at line 25
+14:20:33.278 DEBUG - visiting node MEMBER_SELECT at line 25
+14:20:33.278 DEBUG - visiting node METHOD_INVOCATION at line 25
+14:20:33.278 DEBUG - visiting node TYPE_CAST at line 25
+14:20:33.278 DEBUG - visiting node VARIABLE at line 25
+14:20:33.278 DEBUG - visiting node NULL_LITERAL at line 26
+14:20:33.278 DEBUG - visiting node IDENTIFIER at line 26
+14:20:33.278 DEBUG - visiting node NOT_EQUAL_TO at line 26
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 27
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 27
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 27
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 27
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 27
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 27
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 27
+14:20:33.294 DEBUG - Exploring Exploded Graph for method listContact at line 31
+14:20:33.294 DEBUG - visiting node STRING_LITERAL at line 32
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 32
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 32
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 32
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 32
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 32
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 32
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 32
+14:20:33.294 DEBUG - Exploring Exploded Graph for method getEmployeebyId at line 35
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 36
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 36
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 36
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 36
+14:20:33.294 DEBUG - visiting node TYPE_CAST at line 36
+14:20:33.294 DEBUG - visiting node VARIABLE at line 36
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 37
+14:20:33.294 DEBUG - Exploring Exploded Graph for method updateEmployee at line 40
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 41
+14:20:33.294 DEBUG - visiting node IDENTIFIER at line 41
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 41
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 41
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 41
+14:20:33.294 DEBUG - visiting node MEMBER_SELECT at line 41
+14:20:33.294 DEBUG - visiting node METHOD_INVOCATION at line 41
+14:20:33.294 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree
+    TypeParameters : [
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      IdentifierTree
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              MethodInvocationTree
+                MemberSelectExpressionTree
+                  MemberSelectExpressionTree
+                    IdentifierTree
+                    IdentifierTree
+                  IdentifierTree
+                Arguments
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        VariableTree
+          ModifiersTree
+          IdentifierTree
+          TypeCastTree
+            IdentifierTree
+            MethodInvocationTree
+              MemberSelectExpressionTree
+                MethodInvocationTree
+                  MemberSelectExpressionTree
+                    IdentifierTree
+                    IdentifierTree
+                  Arguments
+                IdentifierTree
+              Arguments
+                IdentifierTree
+                IdentifierTree
+        IfStatementTree
+          BinaryExpressionTree
+            LiteralTree
+            IdentifierTree
+          BlockTree : [
+            ExpressionStatementTree
+              MethodInvocationTree
+                MemberSelectExpressionTree
+                  MethodInvocationTree
+                    MemberSelectExpressionTree
+                      MemberSelectExpressionTree
+                        IdentifierTree
+                        IdentifierTree
+                      IdentifierTree
+                    Arguments
+                  IdentifierTree
+                Arguments
+            ]
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      ParameterizedTypeTree
+        IdentifierTree
+        TypeArguments : [
+          IdentifierTree
+          ]
+      BlockTree : [
+        ReturnStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              MethodInvocationTree
+                MemberSelectExpressionTree
+                  MethodInvocationTree
+                    MemberSelectExpressionTree
+                      IdentifierTree
+                      IdentifierTree
+                    Arguments
+                  IdentifierTree
+                Arguments
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        VariableTree
+          ModifiersTree
+          IdentifierTree
+          TypeCastTree
+            IdentifierTree
+            MethodInvocationTree
+              MemberSelectExpressionTree
+                MethodInvocationTree
+                  MemberSelectExpressionTree
+                    MemberSelectExpressionTree
+                      IdentifierTree
+                      IdentifierTree
+                    IdentifierTree
+                  Arguments
+                IdentifierTree
+              Arguments
+                IdentifierTree
+                IdentifierTree
+        ReturnStatementTree
+          IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              MethodInvocationTree
+                MemberSelectExpressionTree
+                  MemberSelectExpressionTree
+                    IdentifierTree
+                    IdentifierTree
+                  IdentifierTree
+                Arguments
+              IdentifierTree
+            Arguments
+        ]
+    ]
+  ]
+
+14:20:33.310 DEBUG - ----- Classpath analyzed by Squid:
+14:20:33.310 DEBUG - -----
+14:20:33.310 DEBUG - Completing symbol : Object
+14:20:33.310 DEBUG - Exploring Exploded Graph for method getName at line 28
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 29
+14:20:33.310 DEBUG - Exploring Exploded Graph for method setName at line 32
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 33
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 33
+14:20:33.310 DEBUG - visiting node MEMBER_SELECT at line 33
+14:20:33.310 DEBUG - visiting node ASSIGNMENT at line 33
+14:20:33.310 DEBUG - Exploring Exploded Graph for method getCode at line 36
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 37
+14:20:33.310 DEBUG - Exploring Exploded Graph for method setCode at line 40
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 41
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 41
+14:20:33.310 DEBUG - visiting node MEMBER_SELECT at line 41
+14:20:33.310 DEBUG - visiting node ASSIGNMENT at line 41
+14:20:33.310 DEBUG - Exploring Exploded Graph for method getCity at line 44
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 45
+14:20:33.310 DEBUG - Exploring Exploded Graph for method setCity at line 48
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 49
+14:20:33.310 DEBUG - visiting node IDENTIFIER at line 49
+14:20:33.310 DEBUG - visiting node MEMBER_SELECT at line 49
+14:20:33.310 DEBUG - visiting node ASSIGNMENT at line 49
+14:20:33.325 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree : [
+      AnnotationTree
+        IdentifierTree
+        Arguments
+      AnnotationTree
+        IdentifierTree
+        Arguments
+          IdentifierTree
+          LiteralTree
+      ]
+    TypeParameters : [
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            IdentifierTree
+            Arguments
+        ]
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+        ]
+      PrimitiveTypeTree
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+        ]
+      IdentifierTree
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+            IdentifierTree
+            LiteralTree
+        ]
+      IdentifierTree
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      IdentifierTree
+      BlockTree : [
+        ReturnStatementTree
+          IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          AssignmentExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree
+      BlockTree : [
+        ReturnStatementTree
+          IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        PrimitiveTypeTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          AssignmentExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      IdentifierTree
+      BlockTree : [
+        ReturnStatementTree
+          IdentifierTree
+        ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          AssignmentExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+        ]
+    ]
+  ]
+
+14:20:33.341 DEBUG - ----- Classpath analyzed by Squid:
+14:20:33.341 DEBUG - -----
+14:20:33.341 DEBUG - Completing symbol : Object
+14:20:33.341 DEBUG - Completing symbol : List
+14:20:33.341 DEBUG - Completing symbol : Collection
+14:20:33.341 DEBUG - Completing symbol : Iterable
+14:20:33.341 DEBUG - Completing symbol : Iterator
+14:20:33.341 DEBUG - Completing symbol : Consumer
+14:20:33.341 DEBUG - Completing symbol : FunctionalInterface
+14:20:33.341 DEBUG - Completing symbol : Documented
+14:20:33.341 DEBUG - Completing symbol : Retention
+14:20:33.341 DEBUG - Completing symbol : RetentionPolicy
+14:20:33.341 DEBUG - Completing symbol : Enum
+14:20:33.341 DEBUG - Completing symbol : Comparable
+14:20:33.341 DEBUG - Completing symbol : Class
+14:20:33.341 DEBUG - Completing symbol : Constructor
+14:20:33.341 DEBUG - Completing symbol : TypeVariable
+14:20:33.341 DEBUG - Completing symbol : CallerSensitive
+14:20:33.341 DEBUG - Completing symbol : Target
+14:20:33.341 DEBUG - Completing symbol : ElementType
+14:20:33.341 DEBUG - Completing symbol : ReflectionData
+14:20:33.341 DEBUG - Completing symbol : SoftReference
+14:20:33.341 DEBUG - Completing symbol : Reference
+14:20:33.341 DEBUG - Completing symbol : ReferenceQueue
+14:20:33.356 DEBUG - Completing symbol : Map
+14:20:33.356 DEBUG - Completing symbol : Set
+14:20:33.356 DEBUG - Completing symbol : Spliterator
+14:20:33.356 DEBUG - Completing symbol : Comparator
+14:20:33.356 DEBUG - Completing symbol : Function
+14:20:33.356 DEBUG - Completing symbol : ToIntFunction
+14:20:33.356 DEBUG - Completing symbol : ToLongFunction
+14:20:33.356 DEBUG - Completing symbol : ToDoubleFunction
+14:20:33.356 DEBUG - Completing symbol : Entry
+14:20:33.356 DEBUG - Completing symbol : BiConsumer
+14:20:33.356 DEBUG - Completing symbol : BiFunction
+14:20:33.356 DEBUG - Completing symbol : Predicate
+14:20:33.356 DEBUG - Completing symbol : Stream
+14:20:33.356 DEBUG - Completing symbol : BaseStream
+14:20:33.356 DEBUG - Completing symbol : IntFunction
+14:20:33.356 DEBUG - Completing symbol : BinaryOperator
+14:20:33.356 DEBUG - Completing symbol : Optional
+14:20:33.372 DEBUG - Completing symbol : Supplier
+14:20:33.372 DEBUG - Completing symbol : Collector
+14:20:33.372 DEBUG - Completing symbol : Builder
+14:20:33.372 DEBUG - Completing symbol : SafeVarargs
+14:20:33.372 DEBUG - Completing symbol : UnaryOperator
+14:20:33.372 DEBUG - Completing symbol : ListIterator
+14:20:33.388 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree
+    TypeParameters : [
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      ParameterizedTypeTree
+        IdentifierTree
+        TypeArguments : [
+          IdentifierTree
+          ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+    ]
+  ]
+
+14:20:33.419 DEBUG - ----- Classpath analyzed by Squid:
+14:20:33.419 DEBUG - -----
+14:20:33.419 DEBUG - Completing symbol : Object
+14:20:33.419 DEBUG - Completing symbol : List
+14:20:33.419 DEBUG - Completing symbol : Collection
+14:20:33.419 DEBUG - Completing symbol : Iterable
+14:20:33.419 DEBUG - Completing symbol : Iterator
+14:20:33.419 DEBUG - Completing symbol : Consumer
+14:20:33.419 DEBUG - Completing symbol : FunctionalInterface
+14:20:33.419 DEBUG - Completing symbol : Documented
+14:20:33.419 DEBUG - Completing symbol : Retention
+14:20:33.419 DEBUG - Completing symbol : RetentionPolicy
+14:20:33.419 DEBUG - Completing symbol : Enum
+14:20:33.419 DEBUG - Completing symbol : Comparable
+14:20:33.419 DEBUG - Completing symbol : Class
+14:20:33.419 DEBUG - Completing symbol : Constructor
+14:20:33.419 DEBUG - Completing symbol : TypeVariable
+14:20:33.419 DEBUG - Completing symbol : CallerSensitive
+14:20:33.419 DEBUG - Completing symbol : Target
+14:20:33.419 DEBUG - Completing symbol : ElementType
+14:20:33.419 DEBUG - Completing symbol : ReflectionData
+14:20:33.434 DEBUG - Completing symbol : SoftReference
+14:20:33.434 DEBUG - Completing symbol : Reference
+14:20:33.434 DEBUG - Completing symbol : ReferenceQueue
+14:20:33.434 DEBUG - Completing symbol : Map
+14:20:33.434 DEBUG - Completing symbol : Set
+14:20:33.434 DEBUG - Completing symbol : Spliterator
+14:20:33.434 DEBUG - Completing symbol : Comparator
+14:20:33.434 DEBUG - Completing symbol : Function
+14:20:33.434 DEBUG - Completing symbol : ToIntFunction
+14:20:33.434 DEBUG - Completing symbol : ToLongFunction
+14:20:33.434 DEBUG - Completing symbol : ToDoubleFunction
+14:20:33.434 DEBUG - Completing symbol : Entry
+14:20:33.434 DEBUG - Completing symbol : BiConsumer
+14:20:33.434 DEBUG - Completing symbol : BiFunction
+14:20:33.434 DEBUG - Completing symbol : Predicate
+14:20:33.434 DEBUG - Completing symbol : Stream
+14:20:33.434 DEBUG - Completing symbol : BaseStream
+14:20:33.434 DEBUG - Completing symbol : IntFunction
+14:20:33.434 DEBUG - Completing symbol : BinaryOperator
+14:20:33.434 DEBUG - Completing symbol : Optional
+14:20:33.434 DEBUG - Completing symbol : Supplier
+14:20:33.434 DEBUG - Completing symbol : Collector
+14:20:33.450 DEBUG - Completing symbol : Builder
+14:20:33.450 DEBUG - Completing symbol : SafeVarargs
+14:20:33.450 DEBUG - Completing symbol : UnaryOperator
+14:20:33.450 DEBUG - Completing symbol : ListIterator
+14:20:33.450 DEBUG - Exploring Exploded Graph for method addEmployee at line 25
+14:20:33.450 DEBUG - visiting node IDENTIFIER at line 26
+14:20:33.450 DEBUG - visiting node IDENTIFIER at line 26
+14:20:33.466 DEBUG - visiting node MEMBER_SELECT at line 26
+14:20:33.466 DEBUG - visiting node METHOD_INVOCATION at line 26
+14:20:33.466 DEBUG - Exploring Exploded Graph for method deleteEmployee at line 30
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 31
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 31
+14:20:33.466 DEBUG - visiting node MEMBER_SELECT at line 31
+14:20:33.466 DEBUG - visiting node METHOD_INVOCATION at line 31
+14:20:33.466 DEBUG - Exploring Exploded Graph for method getEmployeebyId at line 35
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 36
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 36
+14:20:33.466 DEBUG - visiting node MEMBER_SELECT at line 36
+14:20:33.466 DEBUG - visiting node METHOD_INVOCATION at line 36
+14:20:33.466 DEBUG - Exploring Exploded Graph for method listContact at line 40
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 41
+14:20:33.466 DEBUG - visiting node MEMBER_SELECT at line 41
+14:20:33.466 DEBUG - visiting node METHOD_INVOCATION at line 41
+14:20:33.466 DEBUG - Exploring Exploded Graph for method updateEmployee at line 45
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 46
+14:20:33.466 DEBUG - visiting node IDENTIFIER at line 46
+14:20:33.466 DEBUG - visiting node MEMBER_SELECT at line 46
+14:20:33.466 DEBUG - visiting node METHOD_INVOCATION at line 46
+14:20:33.466 DEBUG - Metric lines is an internal metric computed by SonarQube. Provided value is ignored.
+CompilationUnitTree
+  PackageDeclarationTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree : [
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ImportTree
+    MemberSelectExpressionTree
+      MemberSelectExpressionTree
+        MemberSelectExpressionTree
+          MemberSelectExpressionTree
+            IdentifierTree
+            IdentifierTree
+          IdentifierTree
+        IdentifierTree
+      IdentifierTree
+  ] : [
+  ClassTree
+    ModifiersTree : [
+      AnnotationTree
+        IdentifierTree
+        Arguments
+      ]
+    TypeParameters : [
+    MethodTree
+      ModifiersTree
+      TypeParameters
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            IdentifierTree
+            Arguments
+        ]
+    VariableTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      IdentifierTree
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      IdentifierTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ReturnStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      ParameterizedTypeTree
+        IdentifierTree
+        TypeArguments : [
+          IdentifierTree
+          ]
+      BlockTree : [
+        ReturnStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ]
+    MethodTree
+      ModifiersTree : [
+        AnnotationTree
+          IdentifierTree
+          Arguments
+        ]
+      TypeParameters
+      PrimitiveTypeTree : [
+      VariableTree
+        ModifiersTree
+        IdentifierTree
+      ]
+      BlockTree : [
+        ExpressionStatementTree
+          MethodInvocationTree
+            MemberSelectExpressionTree
+              IdentifierTree
+              IdentifierTree
+            Arguments
+        ]
+    ]
+  ]
+
+14:20:33.481 INFO  - Java Main Files AST scan done: 749 ms
+14:20:33.481 WARN  - Java bytecode has not been made available to the analyzer. The org.sonar.java.bytecode.visitor.DependenciesVisitor@10706411 are disabled.
+14:20:33.481 INFO  - Java Test Files AST scan...
+14:20:33.481 INFO  - 0 source files to be analyzed
+14:20:33.481 INFO  - Java Test Files AST scan done: 0 ms
+14:20:33.481 INFO  - Sensor JavaSquidSensor (done) | time=1310ms
+14:20:33.481 INFO  - Sensor Lines Sensor (wrapped)
+14:20:33.481 INFO  - Sensor Lines Sensor (wrapped) (done) | time=0ms
+14:20:33.481 INFO  - Sensor QProfileSensor
+14:20:33.497 INFO  - Sensor QProfileSensor (done) | time=16ms
+14:20:33.497 INFO  - Sensor InitialOpenIssuesSensor
+14:20:33.497 INFO  - 6/6 source files have been analyzed
+14:20:33.497 INFO  - 0/0 source files have been analyzed
+14:20:33.544 INFO  - Sensor InitialOpenIssuesSensor (done) | time=47ms
+14:20:33.544 INFO  - Sensor ProjectLinksSensor
+14:20:33.544 INFO  - Sensor ProjectLinksSensor (done) | time=0ms
+14:20:33.544 INFO  - Sensor VersionEventsSensor
+14:20:33.731 INFO  - Sensor VersionEventsSensor (done) | time=187ms
+14:20:33.731 INFO  - Sensor SurefireSensor
+14:20:33.731 INFO  - parsing G:\mavenprac\simple-webapp\ems_db-master\target\surefire-reports
+14:20:33.731 ERROR - Reports path not found or is not a directory: G:\mavenprac\simple-webapp\ems_db-master\target\surefire-reports
+14:20:33.731 INFO  - Sensor SurefireSensor (done) | time=0ms
+14:20:33.731 INFO  - Sensor SCM Sensor (wrapped)
+14:20:33.731 INFO  - No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+14:20:33.731 INFO  - Sensor SCM Sensor (wrapped) (done) | time=0ms
+14:20:33.731 INFO  - Sensor CPD Sensor (wrapped)
+14:20:33.731 INFO  - JavaCpdEngine is used for java
+14:20:33.731 INFO  - Cross-project analysis disabled
+14:20:33.762 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.809 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.809 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.824 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.824 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.824 DEBUG - Populating index from [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.824 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/controller/EmployeeController.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/dao/EmployeeDAO.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/model/EmployeeCommand.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/service/EmployeeService.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 DEBUG - Detection of duplications for [moduleKey=check121hardcode, relative=src/main/java/com/sample/mvc/service/EmployeeServiceImpl.java, basedir=G:\mavenprac\simple-webapp\ems_db-master]
+14:20:33.840 INFO  - Sensor CPD Sensor (wrapped) (done) | time=109ms
+14:20:33.840 INFO  - No quality gate is configured.
+14:20:33.887 INFO  - Compare to previous analysis (2016-01-07)
+14:20:33.902 INFO  - Compare over 30 days (2015-12-08, analysis of Mon Jan 04 20:05:37 IST 2016)
+14:20:34.199 INFO  - Execute decorators...
+14:20:34.199 DEBUG - Decorators: ManualMeasureDecorator -> org.sonar.batch.issue.tracking.IssueTrackingDecorator@3c3d53ff -> QProfileEventsDecorator -> org.sonar.batch.design.ProjectDsmDecorator@1c97ede3 -> org.sonar.batch.design.SubProjectDsmDecorator@36e53d45 -> org.sonar.batch.design.DirectoryDsmDecorator@601122cd -> FileTangleIndexDecorator -> SumDuplicationsDecorator -> UnitTestDecorator -> org.sonar.plugins.core.security.ApplyProjectRolesDecorator@73ca241d -> org.sonar.plugins.core.sensors.DirectoriesDecorator@421e8b29 -> org.sonar.plugins.core.sensors.FilesDecorator@21484c17 -> org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@7e2c3f31 -> org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@69745cfe -> org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@77db84cf -> org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@41aa0ede -> org.sonar.plugins.core.timemachine.NewCoverageAggregator@22e1da08 -> f(lines) -> f(generated_lines) -> f(ncloc) -> f(generated_ncloc) -> f(classes) -> f(packages) -> f(functions) -> f(accessors) -> f(statements) -> f(public_api) -> f(comment_lines) -> f(public_undocumented_api) -> f(commented_out_code_lines) -> f(complexity) -> f(complexity_in_classes) -> f(complexity_in_functions) -> f(class_complexity_distribution) -> f(function_complexity_distribution) -> f(file_complexity_distribution) -> f(lines_to_cover) -> f(uncovered_lines) -> f(conditions_to_cover) -> f(uncovered_conditions) -> f(it_lines_to_cover) -> f(it_uncovered_lines) -> f(it_conditions_to_cover) -> f(it_uncovered_conditions) -> f(overall_lines_to_cover) -> f(overall_uncovered_lines) -> f(overall_conditions_to_cover) -> f(overall_uncovered_conditions) -> f(rfc) -> f(rfc_distribution) -> f(lcom4_distribution) -> f(package_cycles) -> f(package_tangles) -> f(package_feedback_edges) -> f(package_edges_weight) -> f(new_lines_to_cover) -> f(new_uncovered_lines) -> f(new_conditions_to_cover) -> f(new_uncovered_conditions) -> f(new_it_lines_to_cover) -> f(new_it_uncovered_lines) -> f(new_it_conditions_to_cover) -> f(new_it_uncovered_conditions) -> f(new_overall_lines_to_cover) -> f(new_overall_uncovered_lines) -> f(new_overall_conditions_to_cover) -> f(new_overall_uncovered_conditions) -> org.sonar.batch.language.LanguageDistributionDecorator@4d20ce7e -> org.sonar.batch.debt.DebtDecorator@72621df0 -> org.sonar.batch.debt.NewDebtDecorator@5c7f8c9f -> DirectoryTangleIndexDecorator -> org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@a24e874 -> CountUnresolvedIssuesDecorator -> CountFalsePositivesDecorator -> CommentDensityDecorator -> f(file_complexity) -> f(class_complexity) -> f(function_complexity) -> org.sonar.plugins.core.sensors.LineCoverageDecorator@22cd7e39 -> org.sonar.plugins.core.sensors.CoverageDecorator@68435eec -> org.sonar.plugins.core.sensors.BranchCoverageDecorator@5d9515d6 -> org.sonar.plugins.core.sensors.ItLineCoverageDecorator@68a06679 -> org.sonar.plugins.core.sensors.ItCoverageDecorator@2155e1e2 -> org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@53937f1a -> org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@26ddfb1b -> org.sonar.plugins.core.sensors.OverallCoverageDecorator@4d25d217 -> org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@437160a0 -> org.sonar.batch.debt.SqaleRatingDecorator@2ce33999 -> org.sonar.plugins.core.timemachine.TendencyDecorator@5346038 -> VariationDecorator
+14:20:34.934 DEBUG - Decorator time:
+	ManualMeasureDecorator: 96ms
+	org.sonar.batch.issue.tracking.IssueTrackingDecorator@3c3d53ff: 32ms
 	QProfileEventsDecorator: 16ms
-	org.sonar.batch.design.ProjectDsmDecorator@79b49b1d: 0ms
-	org.sonar.batch.design.SubProjectDsmDecorator@4d425872: 0ms
-	org.sonar.batch.design.DirectoryDsmDecorator@1076f200: 0ms
+	org.sonar.batch.design.ProjectDsmDecorator@1c97ede3: 0ms
+	org.sonar.batch.design.SubProjectDsmDecorator@36e53d45: 0ms
+	org.sonar.batch.design.DirectoryDsmDecorator@601122cd: 0ms
 	FileTangleIndexDecorator: 0ms
 	SumDuplicationsDecorator: 0ms
 	UnitTestDecorator: 0ms
-	org.sonar.plugins.core.security.ApplyProjectRolesDecorator@182b9c6f: 93ms
-	org.sonar.plugins.core.sensors.DirectoriesDecorator@748ef9e: 0ms
-	org.sonar.plugins.core.sensors.FilesDecorator@1b1cc90: 0ms
-	org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@356eb8d4: 156ms
-	org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@3dbf2603: 0ms
-	org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@7f593176: 0ms
-	org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@3fad151c: 0ms
-	org.sonar.plugins.core.timemachine.NewCoverageAggregator@30779b35: 0ms
+	org.sonar.plugins.core.security.ApplyProjectRolesDecorator@73ca241d: 15ms
+	org.sonar.plugins.core.sensors.DirectoriesDecorator@421e8b29: 0ms
+	org.sonar.plugins.core.sensors.FilesDecorator@21484c17: 0ms
+	org.sonar.plugins.core.timemachine.TimeMachineConfigurationPersister@7e2c3f31: 16ms
+	org.sonar.plugins.core.timemachine.NewCoverageFileAnalyzer@69745cfe: 0ms
+	org.sonar.plugins.core.timemachine.NewItCoverageFileAnalyzer@77db84cf: 0ms
+	org.sonar.plugins.core.timemachine.NewOverallCoverageFileAnalyzer@41aa0ede: 0ms
+	org.sonar.plugins.core.timemachine.NewCoverageAggregator@22e1da08: 0ms
 	f(lines): 0ms
 	f(generated_lines): 0ms
 	f(ncloc): 0ms
@@ -382,7 +1588,7 @@ INFO: SonarQube Server 5.1
 	f(complexity_in_classes): 0ms
 	f(complexity_in_functions): 0ms
 	f(class_complexity_distribution): 0ms
-	f(function_complexity_distribution): 31ms
+	f(function_complexity_distribution): 0ms
 	f(file_complexity_distribution): 0ms
 	f(lines_to_cover): 0ms
 	f(uncovered_lines): 0ms
@@ -396,7 +1602,7 @@ INFO: SonarQube Server 5.1
 	f(overall_uncovered_lines): 0ms
 	f(overall_conditions_to_cover): 0ms
 	f(overall_uncovered_conditions): 0ms
-	f(rfc): 16ms
+	f(rfc): 0ms
 	f(rfc_distribution): 0ms
 	f(lcom4_distribution): 0ms
 	f(package_cycles): 0ms
@@ -415,47 +1621,47 @@ INFO: SonarQube Server 5.1
 	f(new_overall_uncovered_lines): 0ms
 	f(new_overall_conditions_to_cover): 0ms
 	f(new_overall_uncovered_conditions): 0ms
-	org.sonar.batch.language.LanguageDistributionDecorator@67d30d56: 0ms
-	org.sonar.batch.debt.DebtDecorator@23532a0e: 0ms
-	org.sonar.batch.debt.NewDebtDecorator@3680dff2: 0ms
+	org.sonar.batch.language.LanguageDistributionDecorator@4d20ce7e: 0ms
+	org.sonar.batch.debt.DebtDecorator@72621df0: 62ms
+	org.sonar.batch.debt.NewDebtDecorator@5c7f8c9f: 30ms
 	DirectoryTangleIndexDecorator: 0ms
-	org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@7e04a93f: 15ms
+	org.sonar.batch.cpd.decorators.DuplicationDensityDecorator@a24e874: 0ms
 	CountUnresolvedIssuesDecorator: 16ms
 	CountFalsePositivesDecorator: 0ms
 	CommentDensityDecorator: 0ms
 	f(file_complexity): 0ms
 	f(class_complexity): 0ms
 	f(function_complexity): 0ms
-	org.sonar.plugins.core.sensors.LineCoverageDecorator@558ff531: 0ms
-	org.sonar.plugins.core.sensors.CoverageDecorator@3fd96ec8: 0ms
-	org.sonar.plugins.core.sensors.BranchCoverageDecorator@4a4cc870: 0ms
-	org.sonar.plugins.core.sensors.ItLineCoverageDecorator@b50042d: 0ms
-	org.sonar.plugins.core.sensors.ItCoverageDecorator@21dc5e0b: 0ms
-	org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@5587cbd6: 0ms
-	org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@79a4865e: 0ms
-	org.sonar.plugins.core.sensors.OverallCoverageDecorator@725e942b: 0ms
-	org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@3131a06d: 0ms
-	org.sonar.batch.debt.SqaleRatingDecorator@25cf767e: 0ms
-	org.sonar.plugins.core.timemachine.TendencyDecorator@60b4dacc: 48ms
-	VariationDecorator: 45ms
+	org.sonar.plugins.core.sensors.LineCoverageDecorator@22cd7e39: 0ms
+	org.sonar.plugins.core.sensors.CoverageDecorator@68435eec: 0ms
+	org.sonar.plugins.core.sensors.BranchCoverageDecorator@5d9515d6: 0ms
+	org.sonar.plugins.core.sensors.ItLineCoverageDecorator@68a06679: 0ms
+	org.sonar.plugins.core.sensors.ItCoverageDecorator@2155e1e2: 0ms
+	org.sonar.plugins.core.sensors.ItBranchCoverageDecorator@53937f1a: 0ms
+	org.sonar.plugins.core.sensors.OverallLineCoverageDecorator@26ddfb1b: 0ms
+	org.sonar.plugins.core.sensors.OverallCoverageDecorator@4d25d217: 0ms
+	org.sonar.plugins.core.sensors.OverallBranchCoverageDecorator@437160a0: 0ms
+	org.sonar.batch.debt.SqaleRatingDecorator@2ce33999: 0ms
+	org.sonar.plugins.core.timemachine.TendencyDecorator@5346038: 170ms
+	VariationDecorator: 111ms
 
-20:45:35.086 INFO  - Store results in database
-20:45:35.102 DEBUG - Execute org.sonar.batch.phases.GraphPersister
-20:45:35.102 DEBUG - Execute org.sonar.batch.index.SourcePersister
-20:45:35.273 DEBUG - Execute org.sonar.batch.index.ResourcePersister
-20:45:35.273 DEBUG - Execute org.sonar.batch.index.MeasurePersister
-20:45:36.272 DEBUG - Execute org.sonar.batch.index.DuplicationPersister
-20:45:36.303 INFO  - Analysis reports generated in 31ms, dir size=1 KB
-20:45:36.334 INFO  - Analysis reports compressed in 31ms, zip size=3 KB
-20:45:36.334 DEBUG - Publish results
-20:45:36.443 INFO  - Analysis reports sent to server in 109ms
-20:45:36.443 INFO  - ANALYSIS SUCCESSFUL, you can browse http://172.27.59.200:9000/dashboard/index/check111
-20:45:36.443 INFO  - Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report.
-20:45:36.443 DEBUG - Post-jobs : 
-20:45:36.443 DEBUG - Release semaphore on project : org.sonar.api.resources.Project@44e49229[id=23,key=check111,qualifier=TRK], with key batch-check111
+14:20:34.934 INFO  - Store results in database
+14:20:34.934 DEBUG - Execute org.sonar.batch.phases.GraphPersister
+14:20:34.934 DEBUG - Execute org.sonar.batch.index.SourcePersister
+14:20:35.059 DEBUG - Execute org.sonar.batch.index.ResourcePersister
+14:20:35.059 DEBUG - Execute org.sonar.batch.index.MeasurePersister
+14:20:35.589 DEBUG - Execute org.sonar.batch.index.DuplicationPersister
+14:20:35.683 INFO  - Analysis reports generated in 94ms, dir size=5 KB
+14:20:35.714 INFO  - Analysis reports compressed in 31ms, zip size=5 KB
+14:20:35.714 DEBUG - Publish results
+14:20:35.761 INFO  - Analysis reports sent to server in 47ms
+14:20:35.761 INFO  - ANALYSIS SUCCESSFUL, you can browse http://172.27.59.200:9000/dashboard/index/check121hardcode
+14:20:35.761 INFO  - Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report.
+14:20:35.761 DEBUG - Post-jobs : 
+14:20:35.761 DEBUG - Release semaphore on project : org.sonar.api.resources.Project@199763ea[id=67,key=check121hardcode,qualifier=TRK], with key batch-check121hardcode
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION SUCCESS
 INFO: ------------------------------------------------------------------------
-Total time: 12.771s
-Final Memory: 21M/517M
+Total time: 15.731s
+Final Memory: 16M/512M
 INFO: ------------------------------------------------------------------------
