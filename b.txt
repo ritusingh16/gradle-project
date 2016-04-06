@@ -1,4 +1,4 @@
-ssssssssssssssssssSonarQube Runner 2.4
+ddddddddddddddddddddddddddddddddddddddddddddSssssssssssssssssssSonarQube Runner 2.4
 Java 1.8.0_25 Oracle Corporation (64-bit)
 Windows
  7 6.1 amd64
