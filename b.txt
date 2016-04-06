@@ -1,6 +1,7 @@
 SonarQube Runner 2.4
 Java 1.8.0_25 Oracle Corporation (64-bit)
-Windows 7 6.1 amd64
+Windows
+ 7 6.1 amd64
 INFO: Error stacktraces are turned on.
 INFO: Runner configuration file: d:\sonar-runner-dist-2.4\sonar-runner-2.4\conf\sonar-runner.properties
 INFO: Project configuration file: g:\mavenprac\simple-webapp\ems_db-master\sonar-project.properties
