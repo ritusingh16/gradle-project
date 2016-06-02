@@ -51,7 +51,7 @@ sonar {
         url = "http://172.27.59.53:9000/"
     }
     database {
-        url = "jdbc:mysql://172.27.59.53:3306/sonar1"
+        url = "jdbc:mysql://172.27.59.53:3306/sonar"
         driverClassName = "com.mysql.jdbc.Driver"
         username = "sonar"
         password = "sonar"
