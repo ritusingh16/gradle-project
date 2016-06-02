@@ -1,0 +1,59 @@
+apply plugin: 'java'
+apply plugin: 'war'
+//apply plugin: 'eclipse'
+//apply plugin: 'eclipse-wtp'
+
+apply plugin: "groovy"
+apply plugin: "sonar"
+
+
+repositories {
+    mavenCentral()
+}
+
+
+//repositories {
+   // maven {
+    //    url "http://repo.mycompany.com/maven2"
+    //}
+//}
+
+
+dependencies {
+    // http://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api
+//compile group: 'org.codehaus.sonar', name: 'sonar-plugin-api', version: '4.5.1'
+
+// http://mvnrepository.com/artifact/org.springframework/spring-beans
+compile group: 'org.springframework', name: 'spring-beans', version: '4.1.4.RELEASE'
+
+// http://mvnrepository.com/artifact/org.springframework/spring-webmvc
+compile group: 'org.springframework', name: 'spring-webmvc', version: '4.1.4.RELEASE'
+
+// http://mvnrepository.com/artifact/org.hibernate/hibernate-annotations
+compile group: 'org.hibernate', name: 'hibernate-annotations', version: '3.5.1-Final'
+
+// http://mvnrepository.com/artifact/org.hibernate/hibernate-core
+compile group: 'org.hibernate', name: 'hibernate-core', version: '4.3.6.Final'
+
+// http://mvnrepository.com/artifact/com.mebigfatguy.blocklist/blocklist
+compile group: 'com.mebigfatguy.blocklist', name: 'blocklist', version: '0.2.0'
+
+
+// http://mvnrepository.com/artifact/org.springframework/spring-tx
+compile group: 'org.springframework', name: 'spring-tx', version: '2.5.4'
+
+
+}
+
+
+sonar {
+    server {
+        url = "http://172.27.59.53:9000/"
+    }
+    database {
+        url = "jdbc:mysql://172.27.59.53:3306/sonar1"
+        driverClassName = "com.mysql.jdbc.Driver"
+        username = "sonar"
+        password = "sonar"
+    }
+}
